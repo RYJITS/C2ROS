@@ -2,9 +2,9 @@
 
 :root {
     /* Couleurs principales */
-    --c2r-accent: #8a3232;
-    --c2r-accent-hover: #9c3e3e;
-    --c2r-accent-light: #b54545;
+    --c2r-accent: #E53935;
+    --c2r-accent-hover: #F74B45;
+    --c2r-accent-light: #FF7669;
     
     /* Espacement et bordures */
     --c2r-radius: 12px;
@@ -47,15 +47,15 @@
 
 /* Thème sombre (par défaut) */
 .theme-dark {
-    --c2r-bg: #111;
-    --c2r-bg-secondary: #1a1a1a;
-    --c2r-bg-tertiary: #2c2c2c;
-    --c2r-bg-card: #1e1e1e;
-    --c2r-bg-hover: #2a2a2a;
-    --c2r-bg-active: #333333;
+    --c2r-bg: #181818;
+    --c2r-bg-secondary: #1F1F1F;
+    --c2r-bg-tertiary: #222222;
+    --c2r-bg-card: #1F1F1F;
+    --c2r-bg-hover: #222222;
+    --c2r-bg-active: #2a2a2a;
     
-    --c2r-text: #f5f5f5;
-    --c2r-text-secondary: #cccccc;
+    --c2r-text: #F5F5F5;
+    --c2r-text-secondary: #B0B0B0;
     --c2r-text-muted: #999999;
     --c2r-text-disabled: #666666;
     
