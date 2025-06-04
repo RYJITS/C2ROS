@@ -284,15 +284,15 @@ class UICore {
                 <div class="app-actions">
                     ${appCore.isInstalled(app.id) ? 
                         `<button class="btn btn-danger btn-small" onclick="window.C2R_SYSTEM.appCore.uninstallApp('${app.id}'); window.C2R_SYSTEM.uiCore.refreshApplicationsList();" aria-label="Désinstaller ${app.name}">
-                            <span><i class="ph ph-trash"></i></span> Désinstaller
+                            <span>${IconManager.getIcon('uninstall')}</span> Désinstaller
                         </button>` :
                         `<button class="btn btn-primary btn-small" onclick="window.C2R_SYSTEM.appCore.installApp('${app.id}'); window.C2R_SYSTEM.uiCore.refreshApplicationsList(); window.C2R_SYSTEM.uiCore.showNotification('${app.name} installée!', 'success');" aria-label="Installer ${app.name}">
-                            <span><i class="ph ph-plus"></i></span> Installer
+                            <span>${IconManager.getIcon('install')}</span> Installer
                         </button>`
                     }
                     ${appCore.isInstalled(app.id) ? 
-                        `<span class="badge badge-success"><i class="ph ph-check"></i> Installée</span>` : 
-                        `<span class="badge badge-info"><i class="ph ph-plus"></i> Disponible</span>`
+                        `<span class="badge badge-success">${IconManager.getIcon('check')} Installée</span>` : 
+                        `<span class="badge badge-info">${IconManager.getIcon('install')} Disponible</span>`
                     }
                 </div>
             </div>
@@ -333,7 +333,7 @@ class UICore {
                             <span>${app.name}</span>
                         </div>
                         <button class="btn btn-small btn-ghost" onclick="window.C2R_SYSTEM.appCore.uninstallApp('${app.id}'); window.C2R_SYSTEM.uiCore.refreshUserProfile();" aria-label="Désinstaller ${app.name}">
-                            <i class="ph ph-trash"></i>
+                            ${IconManager.getIcon('uninstall')}
                         </button>
                     </div>
                 `).join('');
@@ -383,17 +383,17 @@ class UICore {
                         <td>${user.email}</td>
                         <td>
                             <span class="badge ${user.role === 'admin' ? 'badge-warning' : 'badge-info'}">
-                                ${user.role === 'admin' ? '<i class="ph ph-gear"></i> Admin' : '<i class="ph ph-user"></i> Utilisateur'}
+                                ${user.role === 'admin' ? IconManager.getIcon('admin') + ' Admin' : IconManager.getIcon('profile') + ' Utilisateur'}
                             </span>
                         </td>
                         <td>${user.lastLogin ? new Date(user.lastLogin).toLocaleString('fr-FR') : 'Jamais'}</td>
                         <td>
                             <button class="btn btn-small btn-secondary" onclick="window.C2R_SYSTEM.uiCore.toggleUserRole('${user.id}')" aria-label="Modifier ${user.email}">
-                                <i class="ph ph-pencil"></i> Modifier
+                                ${IconManager.getIcon('edit')} Modifier
                             </button>
                             ${user.id !== userCore.getCurrentUser().id ? 
                                 `<button class="btn btn-small btn-danger" onclick="window.C2R_SYSTEM.uiCore.deleteUser('${user.id}')" aria-label="Supprimer ${user.email}">
-                                    <i class="ph ph-trash"></i> Supprimer
+                                    ${IconManager.getIcon('uninstall')} Supprimer
                                 </button>` : ''
                             }
                         </td>
