@@ -2,19 +2,19 @@
     <div class="notepad-toolbar">
         <div class="toolbar-group">
             <button id="new-note" class="toolbar-btn" title="Nouveau document">
-                <span>📄</span> Nouveau
+                <span data-icon="file-new"></span> Nouveau
             </button>
             <button id="save-note" class="toolbar-btn" title="Sauvegarder">
-                <span>💾</span> Sauvegarder
+                <span data-icon="save"></span> Sauvegarder
             </button>
             <button id="load-note" class="toolbar-btn" title="Charger">
-                <span>📂</span> Charger
+                <span data-icon="open"></span> Charger
             </button>
         </div>
         
         <div class="toolbar-group">
             <button id="ai-assist" class="toolbar-btn ai-btn" title="Assistance IA">
-                <span>🤖</span> IA Assistant
+                <span data-icon="robot"></span> IA Assistant
             </button>
             <select id="ai-action" class="ai-select">
                 <option value="improve">Améliorer le texte</option>
@@ -34,7 +34,7 @@
                 <option value="20">20px</option>
             </select>
             <button id="word-count" class="toolbar-btn info-btn" title="Statistiques">
-                <span>📊</span> <span id="word-counter">0 mots</span>
+                <span data-icon="stats"></span> <span id="word-counter">0 mots</span>
             </button>
         </div>
     </div>
@@ -85,7 +85,7 @@
     <div id="ai-notification" class="ai-notification">
         <div class="ai-content">
             <div class="ai-header">
-                <span class="ai-icon">🤖</span>
+                <span class="ai-icon" data-icon="robot"></span>
                 <span class="ai-title">Assistant IA</span>
                 <button id="close-ai" class="close-btn">&times;</button>
             </div>
