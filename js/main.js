@@ -75,13 +75,13 @@ function updateConnectionStatus(isConnected) {
         if (isConnected) {
             logoutBtn.style.display = 'flex';
             logoutBtn.innerHTML = `
-                <span class="nav-icon">🚪</span>
+                <span class="nav-icon">${IconManager.getIcon('signout')}</span>
                 <span class="nav-text">Déconnexion</span>
             `;
         } else {
             logoutBtn.style.display = 'flex';
             logoutBtn.innerHTML = `
-                <span class="nav-icon">🔑</span>
+                <span class="nav-icon">${IconManager.getIcon('signout')}</span>
                 <span class="nav-text">Se connecter</span>
             `;
             // Changer le gestionnaire d'événement
@@ -204,17 +204,17 @@ function renderFilteredApps(apps) {
                 <strong>Permissions:</strong> ${app.permissions.join(', ') || 'Aucune'}
             </div>
             <div class="app-actions">
-                ${appCore.isInstalled(app.id) ? 
+                ${appCore.isInstalled(app.id) ?
                     `<button class="btn btn-danger btn-small" onclick="handleAppUninstall('${app.id}')" aria-label="Désinstaller ${app.name}">
-                        <span>🗑️</span> Désinstaller
+                        <span>${IconManager.getIcon('uninstall')}</span> Désinstaller
                     </button>` :
                     `<button class="btn btn-primary btn-small" onclick="handleAppInstall('${app.id}')" aria-label="Installer ${app.name}">
-                        <span>➕</span> Installer
+                        <span>${IconManager.getIcon('install')}</span> Installer
                     </button>`
                 }
-                ${appCore.isInstalled(app.id) ? 
-                    `<span class="badge badge-success">✅ Installée</span>` : 
-                    `<span class="badge badge-info">➕ Disponible</span>`
+                ${appCore.isInstalled(app.id) ?
+                    `<span class="badge badge-success">${IconManager.getIcon('check')} Installée</span>` :
+                    `<span class="badge badge-info">${IconManager.getIcon('install')} Disponible</span>`
                 }
             </div>
         </div>
@@ -235,7 +235,7 @@ window.handleAppInstall = function(appId) {
     if (!app) return;
     
     if (appCore.installApp(appId)) {
-        uiCore.showNotification(`✅ ${app.name} installée avec succès!`, 'success');
+        uiCore.showNotification(`${IconManager.getIcon('check')} ${app.name} installée avec succès!`, 'success');
         uiCore.refreshApplicationsList();
         
         // Mettre à jour la sidebar avec les applications
@@ -266,7 +266,7 @@ window.handleAppUninstall = function(appId) {
     
     if (confirm(`Êtes-vous sûr de vouloir désinstaller ${app.name} ?`)) {
         if (appCore.uninstallApp(appId)) {
-            uiCore.showNotification(`🗑️ ${app.name} désinstallée`, 'info');
+            uiCore.showNotification(`${IconManager.getIcon('uninstall')} ${app.name} désinstallée`, 'info');
             uiCore.refreshApplicationsList();
             
             // Mettre à jour la sidebar avec les applications
@@ -308,7 +308,7 @@ function handleSystemReset() {
     
     if (confirm('⚠️ Cette action va réinitialiser complètement le système. Continuer ?')) {
         if (confirm('🚨 ATTENTION: Toutes les données seront perdues. Êtes-vous absolument certain ?')) {
-            uiCore?.showNotification('🔃 Réinitialisation du système en cours...', 'warning');
+            uiCore?.showNotification(`${IconManager.getIcon('refresh')} Réinitialisation du système en cours...`, 'warning');
             
             setTimeout(() => {
                 // Nettoyer le localStorage
@@ -369,7 +369,7 @@ function handleClearCache() {
             });
         }
         
-        uiCore?.showNotification('🗑️ Cache vidé avec succès', 'success');
+        uiCore?.showNotification(`${IconManager.getIcon('uninstall')} Cache vidé avec succès`, 'success');
         
     } catch (error) {
         console.error('Erreur vidage cache:', error);
@@ -491,7 +491,7 @@ function showCriticalError(error) {
             border-radius: 4px;
             cursor: pointer;
             margin-top: 10px;
-        ">🔄 Recharger la page</button>
+        ">${IconManager.getIcon('refresh')} Recharger la page</button>
     `;
     
     document.body.appendChild(errorDiv);
@@ -678,7 +678,7 @@ function handleRegister(e) {
     });
     
     if (newUser) {
-        uiCore.showNotification('✅ Inscription réussie! Vous pouvez maintenant vous connecter.', 'success');
+        uiCore.showNotification(`${IconManager.getIcon('check')} Inscription réussie! Vous pouvez maintenant vous connecter.`, 'success');
         showAuthModal('login');
         
         // Pré-remplir l'email de connexion
@@ -699,7 +699,7 @@ function handleLogout() {
     
     if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
         userCore.logout();
-        uiCore.showNotification('👋 Déconnexion réussie', 'info');
+        uiCore.showNotification(`${IconManager.getIcon('signout')} Déconnexion réussie`, 'info');
         
         // Mettre à jour l'interface
         uiCore.updateUserInterface(null);
