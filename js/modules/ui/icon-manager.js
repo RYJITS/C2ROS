@@ -46,6 +46,9 @@
         circle: '<i class="ph ph-circle"></i>',
         'map-pin': '<i class="ph ph-map-pin"></i>'
     };
+
+    let observer = null;
+
     global.IconManager = {
         getIcon(name) {
             return ICONS[name] || '';
@@ -56,9 +59,31 @@
          * @param {ParentNode} container - élément à parcourir
          */
         inject(container = document) {
+            if (container instanceof Element && container.hasAttribute('data-icon')) {
+                container.innerHTML = this.getIcon(container.dataset.icon);
+            }
             container.querySelectorAll('[data-icon]').forEach(el => {
                 el.innerHTML = this.getIcon(el.dataset.icon);
             });
+        },
+
+        /**
+         * Démarrer l'observation automatique pour injecter les icônes
+         * @param {Element} target - Élément racine à observer
+         */
+        startAutoInject(target = document.body) {
+            if (observer) return;
+            observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    mutation.addedNodes.forEach((node) => {
+                        if (node.nodeType === Node.ELEMENT_NODE) {
+                            this.inject(node);
+                        }
+                    });
+                });
+            });
+
+            observer.observe(target, { childList: true, subtree: true });
         }
     };
 })(window);

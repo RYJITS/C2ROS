@@ -347,6 +347,9 @@
         document.addEventListener('DOMContentLoaded', () => {
             IconManager.inject();
         });
+        window.addEventListener('c2rosReady', () => {
+            IconManager.startAutoInject();
+        });
     </script>
     <script src="js/main.js"></script>
 </body>
