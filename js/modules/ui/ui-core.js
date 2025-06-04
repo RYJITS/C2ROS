@@ -657,6 +657,9 @@ class UICore {
             const htmlContent = await response.text();
             const appContent = appModal.querySelector('.app-modal-content');
             appContent.innerHTML = htmlContent;
+            if (window.IconManager && typeof window.IconManager.applyIcons === 'function') {
+                window.IconManager.applyIcons(appContent);
+            }
             
             // Charger le CSS de l'application
             await this.loadAppCSS(app.id);

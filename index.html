@@ -342,7 +342,13 @@
     <script src="js/mobile-fix.js"></script>
     
     <script src="js/sidebar-minimal.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", () => {document.querySelectorAll("[data-icon]").forEach(el => {el.innerHTML = IconManager.getIcon(el.dataset.icon);});});</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.IconManager && typeof window.IconManager.applyIcons === 'function') {
+                window.IconManager.applyIcons();
+            }
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
