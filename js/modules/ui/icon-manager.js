@@ -49,6 +49,16 @@
     global.IconManager = {
         getIcon(name) {
             return ICONS[name] || '';
+        },
+
+        /**
+         * Injecter les icônes dans le conteneur fourni
+         * @param {ParentNode} container - élément à parcourir
+         */
+        inject(container = document) {
+            container.querySelectorAll('[data-icon]').forEach(el => {
+                el.innerHTML = this.getIcon(el.dataset.icon);
+            });
         }
     };
 })(window);
