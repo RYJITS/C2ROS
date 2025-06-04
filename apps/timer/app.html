@@ -1,6 +1,6 @@
 <div class="timer-app">
     <div class="timer-header">
-        <h2>⏱️ Minuteur</h2>
+        <h2><span data-icon="timer"></span> Minuteur</h2>
         <div class="timer-tabs">
             <button class="tab-btn active" onclick="switchTab('timer')" id="timer-tab">Minuteur</button>
             <button class="tab-btn" onclick="switchTab('stopwatch')" id="stopwatch-tab">Chronomètre</button>
@@ -28,9 +28,9 @@
         </div>
         
         <div class="timer-controls">
-            <button class="control-btn start" onclick="startTimer()" id="start-timer">▶️ Démarrer</button>
-            <button class="control-btn pause" onclick="pauseTimer()" id="pause-timer" style="display: none;">⏸️ Pause</button>
-            <button class="control-btn reset" onclick="resetTimer()">🔄 Reset</button>
+            <button class="control-btn start" onclick="startTimer()" id="start-timer"><span data-icon="play"></span> Démarrer</button>
+            <button class="control-btn pause" onclick="pauseTimer()" id="pause-timer" style="display: none;"><span data-icon="pause"></span> Pause</button>
+            <button class="control-btn reset" onclick="resetTimer()"><span data-icon="refresh"></span> Reset</button>
         </div>
         
         <div class="preset-times">
@@ -56,10 +56,10 @@
         </div>
         
         <div class="timer-controls">
-            <button class="control-btn start" onclick="startStopwatch()" id="start-stopwatch">▶️ Démarrer</button>
-            <button class="control-btn pause" onclick="pauseStopwatch()" id="pause-stopwatch" style="display: none;">⏸️ Pause</button>
-            <button class="control-btn reset" onclick="resetStopwatch()">🔄 Reset</button>
-            <button class="control-btn lap" onclick="addLap()" id="lap-btn" style="display: none;">📍 Tour</button>
+            <button class="control-btn start" onclick="startStopwatch()" id="start-stopwatch"><span data-icon="play"></span> Démarrer</button>
+            <button class="control-btn pause" onclick="pauseStopwatch()" id="pause-stopwatch" style="display: none;"><span data-icon="pause"></span> Pause</button>
+            <button class="control-btn reset" onclick="resetStopwatch()"><span data-icon="refresh"></span> Reset</button>
+            <button class="control-btn lap" onclick="addLap()" id="lap-btn" style="display: none;"><span data-icon="map-pin"></span> Tour</button>
         </div>
         
         <div class="laps-section">

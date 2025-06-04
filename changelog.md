@@ -218,4 +218,7 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 
 ---
 
+### 📄 Documentation
+- Ajout du fichier `docs/icon-workflow.md` pour la gestion Design → Dev des icônes.
+- Application de la librairie d'icônes Phosphor dans toutes les applications.
 *Journal maintenu à jour à chaque modification significative du système*
