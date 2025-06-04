@@ -8,7 +8,7 @@ Ce mini-OS suit le thème "Minimal Red" : fonds gris sombre (#181818 → #222222
 
 ### Librairie commune
 - **Phosphor Icons** est la librairie principale utilisée.
-- Les polices `phosphor.woff2` sont chargées depuis le dossier `fonts/` et importées via `css/phosphor.css`.
+- Les polices sont désormais chargées via CDN (`https://unpkg.com/phosphor-icons@1.4.2/src/css/phosphor.css`) au lieu du dossier `fonts/` afin d'assurer leur disponibilité.
 - Les designers sélectionnent les glyphes nécessaires dans Figma à partir de la librairie Phosphor officielle.
 - Utiliser le plugin Figma "Phosphor Icons" pour importer et maintenir la librairie.
 
