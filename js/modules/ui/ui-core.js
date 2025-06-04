@@ -282,17 +282,13 @@ class UICore {
                     <span>Taille: ${app.size}</span>
                 </div>
                 <div class="app-actions">
-                    ${appCore.isInstalled(app.id) ? 
+                    ${appCore.isInstalled(app.id) ?
                         `<button class="btn btn-danger btn-small" onclick="window.C2R_SYSTEM.appCore.uninstallApp('${app.id}'); window.C2R_SYSTEM.uiCore.refreshApplicationsList();" aria-label="Désinstaller ${app.name}">
-                            <span>${IconManager.getIcon('uninstall')}</span> Désinstaller
+                            ${IconManager.getIcon('uninstall')}
                         </button>` :
-                        `<button class="btn btn-primary btn-small" onclick="window.C2R_SYSTEM.appCore.installApp('${app.id}'); window.C2R_SYSTEM.uiCore.refreshApplicationsList(); window.C2R_SYSTEM.uiCore.showNotification('${app.name} installée!', 'success');" aria-label="Installer ${app.name}">
-                            <span>${IconManager.getIcon('install')}</span> Installer
+                        `<button class="btn btn-primary btn-small" onclick="window.C2R_SYSTEM.appCore.installApp('${app.id}'); window.C2R_SYSTEM.uiCore.refreshApplicationsList();" aria-label="Installer ${app.name}">
+                            ${IconManager.getIcon('install')}
                         </button>`
-                    }
-                    ${appCore.isInstalled(app.id) ? 
-                        `<span class="badge badge-success">${IconManager.getIcon('check')} Installée</span>` : 
-                        `<span class="badge badge-info">${IconManager.getIcon('install')} Disponible</span>`
                     }
                 </div>
             </div>
@@ -806,7 +802,8 @@ class UICore {
      * @param {string} theme - Thème (dark/light)
      */
     setTheme(theme) {
-        document.body.className = `theme-${theme}`;
+        document.body.classList.remove('theme-dark', 'theme-light');
+        document.body.classList.add(`theme-${theme}`);
         this.currentTheme = theme;
     }
     

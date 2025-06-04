@@ -204,17 +204,13 @@ function renderFilteredApps(apps) {
                 <strong>Permissions:</strong> ${app.permissions.join(', ') || 'Aucune'}
             </div>
             <div class="app-actions">
-                ${appCore.isInstalled(app.id) ? 
+                ${appCore.isInstalled(app.id) ?
                     `<button class="btn btn-danger btn-small" onclick="handleAppUninstall('${app.id}')" aria-label="Désinstaller ${app.name}">
-                        <span>🗑️</span> Désinstaller
+                        ${IconManager.getIcon('uninstall')}
                     </button>` :
                     `<button class="btn btn-primary btn-small" onclick="handleAppInstall('${app.id}')" aria-label="Installer ${app.name}">
-                        <span>➕</span> Installer
+                        ${IconManager.getIcon('install')}
                     </button>`
-                }
-                ${appCore.isInstalled(app.id) ? 
-                    `<span class="badge badge-success">✅ Installée</span>` : 
-                    `<span class="badge badge-info">➕ Disponible</span>`
                 }
             </div>
         </div>
