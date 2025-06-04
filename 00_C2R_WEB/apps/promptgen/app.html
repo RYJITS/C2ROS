@@ -1,0 +1,79 @@
+<div class="promptgen-app">
+    <div class="promptgen-header">
+        <h2>🤖 Générateur de Prompts IA</h2>
+        <p>Créez des prompts optimisés pour vos interactions avec l'IA</p>
+    </div>
+    
+    <div class="prompt-builder">
+        <div class="builder-section">
+            <h3>Type de tâche</h3>
+            <select id="task-type" onchange="updatePrompt()">
+                <option value="creative">Créatif</option>
+                <option value="analytical">Analytique</option>
+                <option value="technical">Technique</option>
+                <option value="educational">Éducatif</option>
+                <option value="business">Business</option>
+            </select>
+        </div>
+        
+        <div class="builder-section">
+            <h3>Contexte</h3>
+            <textarea id="context-input" placeholder="Décrivez le contexte de votre demande..." onchange="updatePrompt()"></textarea>
+        </div>
+        
+        <div class="builder-section">
+            <h3>Objectif</h3>
+            <textarea id="objective-input" placeholder="Quel est votre objectif ?" onchange="updatePrompt()"></textarea>
+        </div>
+        
+        <div class="builder-section">
+            <h3>Format de sortie</h3>
+            <select id="output-format" onchange="updatePrompt()">
+                <option value="text">Texte simple</option>
+                <option value="list">Liste à puces</option>
+                <option value="table">Tableau</option>
+                <option value="code">Code</option>
+                <option value="json">JSON</option>
+            </select>
+        </div>
+        
+        <div class="builder-section">
+            <h3>Niveau de détail</h3>
+            <select id="detail-level" onchange="updatePrompt()">
+                <option value="brief">Bref</option>
+                <option value="moderate">Modéré</option>
+                <option value="detailed">Détaillé</option>
+                <option value="comprehensive">Complet</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="prompt-output">
+        <h3>Prompt généré</h3>
+        <div class="prompt-display" id="prompt-display">
+            Votre prompt apparaîtra ici...
+        </div>
+        <div class="prompt-actions">
+            <button onclick="copyPrompt()" class="btn-copy">📋 Copier</button>
+            <button onclick="savePrompt()" class="btn-save">💾 Sauvegarder</button>
+            <button onclick="clearPrompt()" class="btn-clear">🗑️ Effacer</button>
+        </div>
+    </div>
+    
+    <div class="saved-prompts">
+        <h3>Prompts sauvegardés</h3>
+        <div class="prompts-list" id="prompts-list">
+            <div class="no-prompts">Aucun prompt sauvegardé</div>
+        </div>
+    </div>
+    
+    <div class="prompt-templates">
+        <h3>Templates prédéfinis</h3>
+        <div class="templates-grid">
+            <button onclick="loadTemplate('writing')" class="template-btn">✍️ Rédaction</button>
+            <button onclick="loadTemplate('coding')" class="template-btn">💻 Programmation</button>
+            <button onclick="loadTemplate('analysis')" class="template-btn">📊 Analyse</button>
+            <button onclick="loadTemplate('brainstorm')" class="template-btn">💡 Brainstorming</button>
+        </div>
+    </div>
+</div>

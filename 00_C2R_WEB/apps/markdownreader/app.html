@@ -1,0 +1,74 @@
+<div class="markdown-app">
+    <div class="markdown-header">
+        <h2>📄 Lecteur Markdown</h2>
+        <p>Visualisez et éditez vos fichiers Markdown</p>
+    </div>
+    
+    <div class="markdown-toolbar">
+        <button onclick="newDocument()" class="toolbar-btn">📄 Nouveau</button>
+        <button onclick="loadSample()" class="toolbar-btn">📋 Exemple</button>
+        <button onclick="clearEditor()" class="toolbar-btn">🗑️ Effacer</button>
+        <button onclick="toggleView()" class="toolbar-btn" id="view-toggle">👁️ Aperçu</button>
+    </div>
+    
+    <div class="markdown-container">
+        <div class="markdown-editor" id="editor-panel">
+            <h3>Éditeur Markdown</h3>
+            <textarea id="markdown-input" placeholder="Tapez votre Markdown ici...
+# Mon Document
+
+## Introduction
+Ceci est un exemple de document **Markdown**.
+
+### Fonctionnalités
+- **Gras** et *italique*
+- [Liens](https://example.com)
+- `Code inline`
+
+```javascript
+// Bloc de code
+console.log('Hello World!');
+```
+
+> Citation importante
+
+| Colonne 1 | Colonne 2 |
+|-----------|-----------|
+| Données   | Exemple   |
+"></textarea>
+        </div>
+        
+        <div class="markdown-preview" id="preview-panel">
+            <h3>Aperçu</h3>
+            <div id="markdown-output" class="markdown-content">
+                <p>L'aperçu apparaîtra ici...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="markdown-actions">
+        <button onclick="exportHTML()" class="action-btn">💾 Exporter HTML</button>
+        <button onclick="copyMarkdown()" class="action-btn">📋 Copier Markdown</button>
+        <button onclick="copyHTML()" class="action-btn">📋 Copier HTML</button>
+    </div>
+    
+    <div class="markdown-help">
+        <details>
+            <summary>📖 Aide Markdown</summary>
+            <div class="help-content">
+                <h4>Syntaxe de base :</h4>
+                <ul>
+                    <li><code># Titre 1</code> → <strong>Titre principal</strong></li>
+                    <li><code>## Titre 2</code> → <strong>Sous-titre</strong></li>
+                    <li><code>**gras**</code> → <strong>gras</strong></li>
+                    <li><code>*italique*</code> → <em>italique</em></li>
+                    <li><code>[lien](url)</code> → <a href="#">lien</a></li>
+                    <li><code>`code`</code> → <code>code</code></li>
+                    <li><code>- item</code> → Liste à puces</li>
+                    <li><code>1. item</code> → Liste numérotée</li>
+                    <li><code>> citation</code> → Citation</li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</div>
