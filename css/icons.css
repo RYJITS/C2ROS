@@ -181,6 +181,11 @@
     .nav-icon .icon {
         font-size: 1rem;
     }
+
+    /* Couleur rouge de la poubelle en mode mobile */
+    .app-toggle-btn.installed .icon {
+        color: var(--error-color) !important;
+    }
 }
 
 /* Thème sombre - ajustements spécifiques */
