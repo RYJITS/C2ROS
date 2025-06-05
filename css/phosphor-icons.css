@@ -202,3 +202,23 @@
     margin-right: 0.5rem;
     color: var(--text-secondary);
 }
+
+/* Ajout : gestion couleurs icônes thème clair/sombre */
+.theme-dark .ph,
+.dark-mode .ph {
+    color: #fff;
+}
+
+.theme-light .ph {
+    color: #000;
+}
+
+.icon-button .ph,
+.nav-icon .ph {
+    transition: color 0.2s ease;
+}
+
+.icon-button:hover .ph,
+.icon-button:active .ph {
+    color: var(--primary-color);
+}
