@@ -418,7 +418,11 @@ function setupDragAndDrop() {
 
     new Sortable(list, {
         animation: 150,
-        onEnd: () => {
+        onStart: (evt) => {
+            evt.item.classList.add('dragging');
+        },
+        onEnd: (evt) => {
+            evt.item.classList.remove('dragging');
             const order = Array.from(list.querySelectorAll('.app-item'))
                 .map(item => item.dataset.appId);
             window.C2R_SYSTEM?.appCore.reorderApps(order);
