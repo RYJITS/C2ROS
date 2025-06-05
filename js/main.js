@@ -61,6 +61,8 @@ function initializeUserInterface() {
             showAuthModal('login');
         }, 1000);
     }
+
+    displayUpdateTime();
 }
 
 /**
@@ -121,6 +123,12 @@ function setupGlobalEventHandlers() {
     
     // Gestionnaires admin
     setupAdminHandlers();
+
+    // Bouton de vidage du cache pour l'utilisateur
+    const userCacheBtn = document.getElementById('clear-cache-user');
+    if (userCacheBtn) {
+        userCacheBtn.addEventListener('click', handleClearCache);
+    }
     
     // Gestionnaires de drag & drop pour réorganiser les apps
     setupDragAndDrop();
@@ -334,9 +342,9 @@ function handleSystemReset() {
 function handleClearCache() {
     const uiCore = window.C2R_SYSTEM?.uiCore;
     const userCore = window.C2R_SYSTEM?.userCore;
-    
-    if (!userCore?.isAdmin()) {
-        uiCore?.showNotification('Accès refusé - Admin requis', 'error');
+
+    if (!userCore?.getCurrentUser()) {
+        uiCore?.showNotification('Veuillez vous connecter pour continuer', 'error');
         return;
     }
     
@@ -451,6 +459,17 @@ function displayBootInfo(system) {
         const config = window.C2R_CONFIG;
         const version = config.getVersionInfo();
         versionElement.textContent = `${config.system.name} ${version.fullVersion}`;
+    }
+}
+
+/**
+ * Afficher l'heure de la dernière mise à jour
+ */
+function displayUpdateTime() {
+    const el = document.getElementById('update-time');
+    if (el) {
+        const now = new Date();
+        el.textContent = now.toLocaleString();
     }
 }
 

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/apps.css">
     <link rel="stylesheet" href="css/notifications.css">
     <link rel="stylesheet" href="css/sidebar-minimal.css">
+    <link rel="stylesheet" href="css/bottom-nav.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/phosphor-icons.css">
     <link rel="stylesheet" href="css/phosphor.css">
@@ -86,6 +87,7 @@
                 <div class="welcome-header">
                     <h1>Bienvenue sur C2R OS</h1>
                     <p class="system-version">C2R OS v1.0.0 – Build 2025-05-27</p>
+                    <p class="update-time text-small">Mis à jour le <span id="update-time"></span></p>
                 </div>
                 
                 <div class="welcome-content">
@@ -183,6 +185,10 @@
                             </label>
                         </label>
                     </div>
+
+                    <button class="btn btn-secondary" id="clear-cache-user" aria-label="Vider le cache">
+                        Vider le cache
+                    </button>
                 </div>
             </div>
         </section>
@@ -256,6 +262,30 @@
             </div>
         </section>
     </main>
+
+    <!-- Barre de navigation mobile -->
+    <nav class="bottom-nav mobile-only">
+        <a href="#home" class="nav-link" data-page="home" aria-label="Accueil">
+            <span class="nav-icon" data-icon="home"></span>
+        </a>
+        <a href="#store" class="nav-link" data-page="store" aria-label="Store">
+            <span class="nav-icon" data-icon="store"></span>
+        </a>
+        <a href="#profile" class="nav-link" data-page="profile" aria-label="Profil">
+            <span class="nav-icon" data-icon="profile"></span>
+        </a>
+        <button class="nav-link" id="mobile-apps-btn" aria-label="Applications">
+            <span class="nav-icon" data-icon="list"></span>
+        </button>
+    </nav>
+
+    <div class="mobile-apps-dropdown" id="mobile-apps-dropdown">
+        <div class="mobile-apps-header">
+            <h3>Applications installées</h3>
+            <button class="close-btn" id="close-mobile-apps">&times;</button>
+        </div>
+        <div class="mobile-apps-list" id="mobile-apps-list"></div>
+    </div>
 
     <!-- Overlay mobile -->
     <div class="overlay" id="overlay"></div>
@@ -343,6 +373,7 @@
     <script src="js/mobile-fix.js"></script>
     
     <script src="js/sidebar-minimal.js"></script>
+    <script src="js/bottom-nav.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             IconManager.inject();
