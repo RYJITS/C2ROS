@@ -6,6 +6,16 @@ Les icônes Phosphor sont désormais chargées via CDN afin d'éviter les probl�
 
 - Voir [`docs/icon-workflow.md`](docs/icon-workflow.md) pour le workflow complet des icônes et l'intégration React/Vite/Tailwind.
 
+## Aperçu local
+
+Pour afficher le projet en local, placez-vous dans le dossier puis exécutez :
+
+- `python3 -m http.server 8000` (Linux/Mac)
+- `python -m http.server 8000` ou `py -m http.server 8000` (Windows)
+
+Veillez à disposer d'une installation de Python 3.
+
+
 ## Tests
 
 Pour exécuter les tests, lancez la commande `npm test`.
