@@ -8,6 +8,8 @@ Depuis la version actuelle, le Store utilise la méthode `toggleApp(appId)` pour
 installer ou désinstaller une application. Un bouton unique affiche l'icône
 `plus` en blanc tant que l'application n'est pas installée, puis une icône de
 poubelle rouge une fois installée.
+L'affichage sombre maintient cette couleur rouge et la taille de ce bouton a
+été réduite pour un meilleur rendu sur mobile.
 
 En mode mobile, la barre de navigation basse comprend un bouton **Applications**.
 L'icône correspondante est maintenant correctement chargée grâce à l'ajout de

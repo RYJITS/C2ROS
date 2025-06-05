@@ -7,6 +7,7 @@ Les icônes Font Awesome sont désormais chargées via CDN afin d'éviter les pr
 - Voir [`docs/icon-workflow.md`](docs/icon-workflow.md) pour le workflow complet des icônes et l'intégration React/Vite/Tailwind.
 - La documentation de chaque module se trouve dans `docs/*-readme.md`.
 - Le Store présente un bouton unique pour installer ou désinstaller une application : l'icône « plus » devient une poubelle rouge lorsqu'elle est installée.
+- En mode sombre, la poubelle conserve sa couleur rouge et la taille des icônes d'installation a été réduite pour un meilleur rendu mobile.
 - En affichage mobile, un bouton "Applications" est disponible dans la barre de navigation basse.
 
 ## Aperçu local
