@@ -6,4 +6,5 @@ maximal d'applications, accès administrateur, etc.).
 
 Les applications installées peuvent être réordonnées par glisser-déposer depuis
 la page Profil. L'ordre choisi est sauvegardé et fonctionne aussi bien sur
-mobile que sur ordinateur grâce à SortableJS.
+mobile que sur ordinateur grâce à SortableJS. La barre latérale et le menu
+mobile se mettent automatiquement à jour pour refléter ce nouvel ordre.
