@@ -251,3 +251,8 @@ Documentation
 
 ### ♻️ Navigation mobile simplifiée
 - Suppression du menu hamburger au profit de la barre de navigation basse.
+
+## [1.0.5] - 2025-06-08 "Fix"
+
+### 🐛 Correctifs
+- Les icônes "installer" et "poubelle" conservent leur design lors de la recherche ou du filtrage dans le Store.
