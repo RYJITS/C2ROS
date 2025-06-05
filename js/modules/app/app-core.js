@@ -34,6 +34,7 @@ class AppCore {
                 description: 'Éditeur de texte simple et efficace avec assistance IA',
                 icon: IconManager.getIcon('note'),
                 category: 'Productivité',
+                type: 'application',
                 version: '1.0.0',
                 author: 'C2R Team',
                 size: '45 KB',
@@ -48,6 +49,7 @@ class AppCore {
                 description: 'Gestionnaire de tâches et rappels intelligent',
                 icon: IconManager.getIcon('checkbox'),
                 category: 'Productivité',
+                type: 'application',
                 version: '1.0.0',
                 author: 'C2R Team',
                 size: '38 KB',
@@ -62,6 +64,7 @@ class AppCore {
                 description: 'Création d\'instructions automatisées pour l\'IA',
                 icon: IconManager.getIcon('robot'),
                 category: 'Développement',
+                type: 'application',
                 version: '1.0.0',
                 author: 'C2R Team',
                 size: '52 KB',
@@ -76,6 +79,7 @@ class AppCore {
                 description: 'Rendu de fichiers Markdown par drag & drop',
                 icon: IconManager.getIcon('file'),
                 category: 'Développement',
+                type: 'application',
                 version: '1.0.0',
                 author: 'C2R Team',
                 size: '65 KB',
@@ -90,6 +94,7 @@ class AppCore {
                 description: 'Interface de création HTML/CSS de base',
                 icon: IconManager.getIcon('globe'),
                 category: 'Développement',
+                type: 'application',
                 version: '1.0.0',
                 author: 'C2R Team',
                 size: '58 KB',
@@ -104,6 +109,7 @@ class AppCore {
                 description: 'Calculatrice scientifique avancée',
                 icon: IconManager.getIcon('calculator'),
                 category: 'Utilitaires',
+                type: 'application',
                 version: '1.0.0',
                 author: 'C2R Team',
                 size: '32 KB',
@@ -118,6 +124,7 @@ class AppCore {
                 description: 'Prévisions météorologiques en temps réel',
                 icon: IconManager.getIcon('weather'),
                 category: 'Information',
+                type: 'information',
                 version: '1.0.0',
                 author: 'C2R Team',
                 size: '42 KB',
@@ -132,6 +139,7 @@ class AppCore {
                 description: 'Minuteur et chronomètre personnalisable',
                 icon: IconManager.getIcon('timer'),
                 category: 'Utilitaires',
+                type: 'application',
                 version: '1.0.0',
                 author: 'C2R Team',
                 size: '28 KB',
@@ -504,10 +512,11 @@ class AppCore {
         if (!query) return this.getAvailableApps();
         
         const searchTerm = query.toLowerCase();
-        return this.getAvailableApps().filter(app => 
+        return this.getAvailableApps().filter(app =>
             app.name.toLowerCase().includes(searchTerm) ||
             app.description.toLowerCase().includes(searchTerm) ||
             app.category.toLowerCase().includes(searchTerm) ||
+            (app.type && app.type.toLowerCase().includes(searchTerm)) ||
             app.tags.some(tag => tag.toLowerCase().includes(searchTerm))
         );
     }
@@ -519,6 +528,15 @@ class AppCore {
      */
     getAppsByCategory(category) {
         return this.getAvailableApps().filter(app => app.category === category);
+    }
+
+    /**
+     * Filtrer par type
+     * @param {string} type - Type d'application
+     * @returns {Array} Applications du type
+     */
+    getAppsByType(type) {
+        return this.getAvailableApps().filter(app => app.type === type);
     }
     
     /**
