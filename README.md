@@ -11,23 +11,11 @@ Les icônes Font Awesome sont désormais chargées via CDN afin d'éviter les pr
 - Sur les tuiles du Store, l'icône d'installation ou de suppression est alignée à droite pour une interface plus claire.
 - En mode sombre, la poubelle conserve sa couleur rouge et la taille des icônes d'installation a été réduite pour un meilleur rendu mobile.
 - En affichage mobile, un bouton "Applications" est disponible dans la barre de navigation basse.
- ywlsg1-codex/2025-06-05
 - Depuis la version 1.1.0, les applications installées peuvent être réordonnées par glisser-déposer directement dans la page Profil, sur mobile comme sur ordinateur.
-=======
-uk9xnl-codex/2025-06-05
-- La barre latérale dispose d'un bouton intégré pour passer en mode compact. L'icône en chevron s'inverse automatiquement selon la position de la barre.
-=======
-q892t8-codex/2025-06-05
 - Le menu hamburger a disparu : la barre de navigation basse gère désormais la navigation mobile.
-
-bpqc46-codex/2025-06-05
 - La barre latérale adopte désormais un dégradé de gris avec ombre portée pour mieux s'intégrer au thème sombre ou clair.
-
-main
 - La barre latérale possède désormais un bouton intégré permettant de passer en mode compact. Ce bouton se place automatiquement de l'autre côté si la barre est à droite.
-main
-main
-main
+- Correction de la couleur bleue des icônes de désinstallation sur mobile ; elles apparaissent maintenant en rouge.
 
 ## Aperçu local
 

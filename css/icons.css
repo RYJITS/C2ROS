@@ -60,7 +60,7 @@
 }
 
 .app-toggle-btn.installed .icon {
-    color: var(--error-color);
+    color: var(--error-color) !important;
 }
 
 /* Icônes de statut */
@@ -234,7 +234,7 @@
 
 .theme-dark .app-toggle-btn.installed .icon,
 .dark-mode .app-toggle-btn.installed .icon {
-    color: var(--error-color);
+    color: var(--error-color) !important;
 }
 
 .theme-light .icon {
