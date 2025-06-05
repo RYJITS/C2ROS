@@ -6,6 +6,10 @@ Les icônes Font Awesome sont chargées via CDN. Le fichier `index.html` référ
 
 - Voir [`docs/icon-workflow.md`](docs/icon-workflow.md) pour le workflow complet des icônes.
 - La documentation de chaque module se trouve dans `docs/*-readme.md`.
+79080s-codex/2025-06-05
+- La liste des pop-ups indispensables figure dans
+  [`docs/popup-readme.md`](docs/popup-readme.md).
+=======
 gomuxy-codex/2025-06-05
 - Le Store présente un bouton unique pour installer ou désinstaller une application : l'icône « plus » devient une poubelle rouge lorsqu'elle est installée.
 - Les boutons d'installation et de désinstallation affichent désormais l'icône à droite du texte pour une meilleure lisibilité.
@@ -23,6 +27,7 @@ uc0ehg-codex/2025-06-05
 - Le menu hamburger a disparu : la barre de navigation basse gère désormais la navigation mobile.
 - La barre latérale adopte désormais un dégradé de gris avec ombre portée pour mieux s'intégrer au thème sombre ou clair.
 =======
+main
 - Le Store propose un bouton unique pour installer ou désinstaller une application : l'icône « plus » devient une poubelle rouge.
 - Les icônes d'installation sont alignées à droite des tuiles pour plus de clarté.
 - En mode sombre, la poubelle reste rouge et la taille des icônes est réduite pour le mobile.
