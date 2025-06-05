@@ -2,7 +2,7 @@
 
 Mini OS modulaire basé sur HTML/CSS/JS.
 
-Les icônes Phosphor sont désormais chargées via CDN afin d'éviter les problèmes de police manquante. Le fichier `index.html` référence directement `https://unpkg.com/phosphor-icons@1.4.2/src/css/phosphor.css`.
+Les icônes Font Awesome sont désormais chargées via CDN afin d'éviter les problèmes de police manquante. Le fichier `index.html` référence directement `https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css`.
 
 - Voir [`docs/icon-workflow.md`](docs/icon-workflow.md) pour le workflow complet des icônes et l'intégration React/Vite/Tailwind.
 - La documentation de chaque module se trouve dans `docs/*-readme.md`.

@@ -7,13 +7,13 @@ Ce mini-OS suit le thème "Minimal Red" : fonds gris sombre (#181818 → #222222
 ## 1. Gestion des icônes
 
 ### Librairie commune
-- **Phosphor Icons** est la librairie principale utilisée.
-- Les polices sont désormais chargées via CDN (`https://unpkg.com/phosphor-icons@1.4.2/src/css/phosphor.css`) au lieu du dossier `fonts/` afin d'assurer leur disponibilité.
-- Les designers sélectionnent les glyphes nécessaires dans Figma à partir de la librairie Phosphor officielle.
-- Utiliser le plugin Figma "Phosphor Icons" pour importer et maintenir la librairie.
+- **Font Awesome** est la librairie principale utilisée.
+- Les polices sont désormais chargées via CDN (`https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css`) au lieu du dossier `fonts/` afin d'assurer leur disponibilité.
+- Les designers sélectionnent les glyphes nécessaires dans Figma à partir de la librairie Font Awesome officielle.
+- Utiliser le plugin Figma "Font Awesome" pour importer et maintenir la librairie.
 
 ### Icônes personnalisées
-- Les icônes non disponibles dans Phosphor sont dessinées dans Figma (format vectoriel).
+- Les icônes non disponibles dans Font Awesome sont dessinées dans Figma (format vectoriel).
 - Export en **SVG** (1 fichier par icône) avec un nom explicite (`custom-<nom>.svg`).
 - Les SVG sont placés dans `public/icons/custom/` du dépôt React.
 - L'équipe Dev ajoute ces références dans `IconManager` pour pouvoir les injecter côté client.
@@ -24,7 +24,7 @@ Ce mini-OS suit le thème "Minimal Red" : fonds gris sombre (#181818 → #222222
 c2ros-react/
 ├── public/
 │   ├── icons/
-│   │   ├── phosphor/              # Copie locale des icônes Phosphor
+│   │   ├── fontawesome/              # Copie locale des icônes Font Awesome
 │   │   └── custom/               # SVG customs exportés depuis Figma
 │   └── index.html
 ├── src/
@@ -56,14 +56,14 @@ Les fichiers CSS actuels (`css/`) et JS vanilla (`js/`) restent pour l'ancienne 
    ```jsx
    import React from 'react';
 
-   export default function Icon({ name, className }) {
-     const icons = {
-       home: <i className="ph ph-house" />,
-       store: <i className="ph ph-shopping-bag" />,
-       // icônes supplémentaires…
-     };
-     return <span className={className}>{icons[name] || null}</span>;
-   }
+  export default function Icon({ name, className }) {
+    const icons = {
+      home: <i className="icon fa-solid fa-house" />,
+      store: <i className="icon fa-solid fa-store" />,
+      // icônes supplémentaires…
+    };
+    return <span className={className}>{icons[name] || null}</span>;
+  }
    ```
 4. **Utilisation**
    ```jsx
