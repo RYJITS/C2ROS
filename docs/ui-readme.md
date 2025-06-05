@@ -14,3 +14,7 @@ L'affichage sombre maintient cette couleur rouge et la taille de ce bouton a
 En mode mobile, la barre de navigation basse comprend un bouton **Applications**.
 L'icône correspondante est maintenant correctement chargée grâce à l'ajout de
 l'icône `list` dans `IconManager`.
+
+La page Profil intègre un tri visuel des applications installées via SortableJS.
+L'utilisateur peut glisser-déposer les tuiles pour définir son ordre préféré,
+qui est enregistré aussitôt.

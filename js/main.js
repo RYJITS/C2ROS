@@ -389,8 +389,20 @@ function handleClearCache() {
  * Configurer le drag & drop pour réorganiser les applications
  */
 function setupDragAndDrop() {
-    // Sera implémenté dans une version future
-    console.log('🔄 Drag & Drop sera implémenté dans la v1.1.0');
+    const list = document.getElementById('installed-apps-list');
+    if (!list || typeof Sortable === 'undefined') return;
+
+    if (list.dataset.sortableApplied) return;
+    list.dataset.sortableApplied = 'true';
+
+    new Sortable(list, {
+        animation: 150,
+        onEnd: () => {
+            const order = Array.from(list.querySelectorAll('.app-item'))
+                .map(item => item.dataset.appId);
+            window.C2R_SYSTEM?.appCore.reorderApps(order);
+        }
+    });
 }
 
 /**

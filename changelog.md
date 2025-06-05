@@ -1,5 +1,11 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.0] - 2025-06-06 "DragDrop"
+
+### 🚀 Nouvelles fonctionnalités
+- Réorganisation des applications depuis la page Profil via glisser-déposer
+  (SortableJS), compatible mobile et desktop.
+
 ## [1.0.2] - 2025-06-05 "UX"
 
 ### ✨ Améliorations de l'interface

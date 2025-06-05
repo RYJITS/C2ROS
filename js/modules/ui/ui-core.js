@@ -336,12 +336,12 @@ class UICore {
         const appsList = document.getElementById('installed-apps-list');
         if (appsList) {
             const installedApps = appCore.getInstalledApps();
-            
+
             if (installedApps.length === 0) {
                 appsList.innerHTML = '<p class="text-muted">Aucune application installée</p>';
             } else {
                 appsList.innerHTML = installedApps.map(app => `
-                    <div class="app-item" draggable="true">
+                    <div class="app-item" draggable="true" data-app-id="${app.id}">
                         <div class="app-item-info">
                             <span class="app-icon">${app.icon}</span>
                             <span>${app.name}</span>
@@ -351,6 +351,9 @@ class UICore {
                         </button>
                     </div>
                 `).join('');
+                if (window.setupDragAndDrop) {
+                    window.setupDragAndDrop();
+                }
             }
         }
         

@@ -3,3 +3,7 @@
 Propose plusieurs modèles de profils prédéfinis et charge celui de l'utilisateur
 courant. Chaque profil définit des préférences et des limitations (nombre
 maximal d'applications, accès administrateur, etc.).
+
+Les applications installées peuvent être réordonnées par glisser-déposer depuis
+la page Profil. L'ordre choisi est sauvegardé et fonctionne aussi bien sur
+mobile que sur ordinateur grâce à SortableJS.
