@@ -212,18 +212,11 @@ function renderFilteredApps(apps) {
                 <strong>Permissions:</strong> ${app.permissions.join(', ') || 'Aucune'}
             </div>
             <div class="app-actions">
-                ${appCore.isInstalled(app.id) ?
-                    `<button class="btn btn-danger btn-small" onclick="handleAppUninstall('${app.id}')" aria-label="Désinstaller ${app.name}">
-                        Désinstaller <span>${IconManager.getIcon('uninstall')}</span>
-                    </button>` :
-                    `<button class="btn btn-primary btn-small" onclick="handleAppInstall('${app.id}')" aria-label="Installer ${app.name}">
-                        Installer <span>${IconManager.getIcon('install')}</span>
-                    </button>`
-                }
-                ${appCore.isInstalled(app.id) ?
-                    `<span class="badge badge-success">${IconManager.getIcon('check')} Installée</span>` :
-                    `<span class="badge badge-info">${IconManager.getIcon('install')} Disponible</span>`
-                }
+                <button class="app-toggle-btn ${appCore.isInstalled(app.id) ? 'installed' : ''}"
+                        onclick="${appCore.isInstalled(app.id) ? `handleAppUninstall('${app.id}')` : `handleAppInstall('${app.id}')`}"
+                        aria-label="${appCore.isInstalled(app.id) ? `Désinstaller ${app.name}` : `Installer ${app.name}`}">
+                    <span class="icon">${IconManager.getIcon(appCore.isInstalled(app.id) ? 'uninstall' : 'install')}</span>
+                </button>
             </div>
         </div>
     `).join('');
