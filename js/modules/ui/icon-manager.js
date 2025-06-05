@@ -46,6 +46,8 @@
         thermometer: '<i class="icon fa-solid fa-temperature-half"></i>',
         circle: '<i class="icon fa-solid fa-circle"></i>',
         'map-pin': '<i class="icon fa-solid fa-map-pin"></i>',
+        close: '<i class="icon fa-solid fa-xmark"></i>',
+        square: '<i class="icon fa-solid fa-square"></i>',
         'chevron-left': '<i class="icon fa-solid fa-chevron-left"></i>',
         'chevron-right': '<i class="icon fa-solid fa-chevron-right"></i>'
     };

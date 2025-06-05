@@ -17,6 +17,7 @@
 - Ajout des fichiers `docs/*-readme.md` décrivant les modules.
 
 ## [1.0.0] - 2025-05-27 "Genesis"
+gomuxy-codex/2025-06-05
 
 # 📝 C2R OS - Journal des modifications
 
@@ -36,6 +37,8 @@
 - Ajout des fichiers `docs/*-readme.md` décrivant les modules.
 
 ## [1.0.0] - 2025-05-27 "Genesis"
+=======
+main
 
 ### 🆕 Nouvelles fonctionnalités réelles implémentées
 
@@ -261,9 +264,16 @@ Documentation
 
 ## [1.0.3] - 2025-06-06 "UI"
 
+gomuxy-codex/2025-06-05
 ### ✨ Améliorations de la sidebar
 - Le bouton de réduction est désormais intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position.
 - Le logo "C2R" n'est visible qu'en mode étendu de la barre.
+=======
+### ✨ Améliorations de la sidebar
+- Le bouton de réduction est désormais intégré à la barre latérale elle-même,
+  placé dans l'en-tête. L'icône passe d'une croix à un petit carré selon l'état
+  de la barre et sa position s'adapte lorsqu'elle est à droite.
+main
 
 ## [1.0.4] - 2025-06-07 "UI"
 
