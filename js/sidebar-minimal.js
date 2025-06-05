@@ -33,7 +33,10 @@ class SidebarMinimal {
         const icon = document.createElement('span');
         icon.className = 'nav-icon';
         toggleBtn.appendChild(icon);
+uc0ehg-codex/2025-06-05
 
+=======
+main
         toggleBtn.addEventListener('click', () => {
             this.toggleMinimalSidebar();
         });
@@ -212,11 +215,10 @@ class SidebarMinimal {
         const icon = document.querySelector('.sidebar-toggle-minimal .nav-icon');
         if (!icon) return;
 
-        const isRight = document.body.classList.contains('sidebar-right');
         if (this.isMinimal) {
-            icon.dataset.icon = isRight ? 'chevron-left' : 'chevron-right';
+            icon.dataset.icon = 'square';
         } else {
-            icon.dataset.icon = isRight ? 'chevron-right' : 'chevron-left';
+            icon.dataset.icon = 'close';
         }
 
         window.IconManager?.inject(icon);
