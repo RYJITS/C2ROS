@@ -8,6 +8,7 @@
         install: '<i class="icon fa-solid fa-plus"></i>',
         uninstall: '<i class="icon fa-solid fa-trash"></i>',
         check: '<i class="icon fa-solid fa-check"></i>',
+        list: '<i class="icon fa-solid fa-list"></i>',
         signout: '<i class="icon fa-solid fa-right-from-bracket"></i>',
         search: '<i class="icon fa-solid fa-magnifying-glass"></i>',
         idea: '<i class="icon fa-solid fa-lightbulb"></i>',
