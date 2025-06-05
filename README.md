@@ -9,3 +9,8 @@ Les icônes Phosphor sont désormais chargées via CDN afin d'éviter les probl�
 ## Tests
 
 Pour exécuter les tests, lancez la commande `npm test`.
+
+## Licence
+
+Ce projet est distribué sous licence MIT. Consultez le fichier [LICENSE](LICENSE)
+pour plus de détails.
