@@ -203,8 +203,7 @@
     color: var(--text-secondary);
 }
 
-/* Ajout : gestion couleurs icônes thème clair/sombre */
-5qj3sj-codex/2025-06-05
+/* Couleurs des icônes selon le thème */
 .theme-dark .ph,
 .dark-mode .ph {
     color: #fff;
@@ -217,22 +216,10 @@
 .icon-button .ph,
 .nav-icon .ph {
     transition: color 0.2s ease;
-
-.icon-button .ph {
-    color: #000;
-    transition: color 0.2s ease;
-}
-
-.dark-mode .icon-button .ph {
-    color: #fff;
-main
 }
 
 .icon-button:hover .ph,
 .icon-button:active .ph {
-5qj3sj-codex/2025-06-05
     color: var(--primary-color);
-
-    color: #E53935;
- main
 }
+
