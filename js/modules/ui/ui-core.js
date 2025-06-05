@@ -283,8 +283,10 @@ class UICore {
                 <div class="app-actions">
                     <button class="app-toggle-btn ${appCore.isInstalled(app.id) ? 'installed' : ''}"
                             onclick="window.C2R_SYSTEM.uiCore.toggleApp('${app.id}')"
-                            aria-label="${appCore.isInstalled(app.id) ? 'Désinstaller' : 'Installer'}">
-                        <span class="icon">${IconManager.getIcon(appCore.isInstalled(app.id) ? 'uninstall' : 'install')}</span>
+                            aria-label="${appCore.isInstalled(app.id) ? `Désinstaller ${app.name}` : `Installer ${app.name}`}">
+                        ${appCore.isInstalled(app.id) ?
+                            `Désinstaller <span class="icon">${IconManager.getIcon('uninstall')}</span>` :
+                            `Installer <span class="icon">${IconManager.getIcon('install')}</span>`}
                     </button>
                 </div>
             </div>
