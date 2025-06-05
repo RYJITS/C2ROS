@@ -7,10 +7,11 @@ Ce mini-OS suit le thème "Minimal Red" : fonds gris sombre (#181818 → #222222
 ## 1. Gestion des icônes
 
 ### Librairie commune
-- **Font Awesome** est la librairie principale utilisée.
-- Les polices sont désormais chargées via CDN (`https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css`) au lieu du dossier `fonts/` afin d'assurer leur disponibilité.
-- Les designers sélectionnent les glyphes nécessaires dans Figma à partir de la librairie Font Awesome officielle.
-- Utiliser le plugin Figma "Font Awesome" pour importer et maintenir la librairie.
+ - **Font Awesome** est la librairie principale utilisée.
+ - Les polices sont désormais chargées via CDN (`https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css`) au lieu du dossier `fonts/` afin d'assurer leur disponibilité.
+ - Les règles de style personnalisées sont regroupées dans `css/icons.css` et les anciennes polices Phosphor (`.woff`) ont été retirées du dépôt.
+ - Les designers sélectionnent les glyphes nécessaires dans Figma à partir de la librairie Font Awesome officielle.
+ - Utiliser le plugin Figma "Font Awesome" pour importer et maintenir la librairie.
 
 ### Icônes personnalisées
 - Les icônes non disponibles dans Font Awesome sont dessinées dans Figma (format vectoriel).

@@ -226,4 +226,5 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 ### 📄 Documentation
 - Ajout du fichier `docs/icon-workflow.md` pour la gestion Design → Dev des icônes.
 - Migration vers la librairie **Font Awesome** pour toutes les icônes (chargement via CDN).
+- Suppression des anciennes polices Phosphor (`.woff`, `.woff2`) et remplacement de `phosphor-icons.css` par `icons.css`.
 *Journal maintenu à jour à chaque modification significative du système*

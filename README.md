@@ -3,6 +3,7 @@
 Mini OS modulaire basé sur HTML/CSS/JS.
 
 Les icônes Font Awesome sont désormais chargées via CDN afin d'éviter les problèmes de police manquante. Le fichier `index.html` référence directement `https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css`.
+Les règles de style associées sont centralisées dans `css/icons.css` et les anciennes polices Phosphor au format `.woff` ont été supprimées.
 
 - Voir [`docs/icon-workflow.md`](docs/icon-workflow.md) pour le workflow complet des icônes et l'intégration React/Vite/Tailwind.
 - La documentation de chaque module se trouve dans `docs/*-readme.md`.
