@@ -14,7 +14,27 @@ L'affichage sombre maintient cette couleur rouge et la taille de ce bouton a
 En mode mobile, la barre de navigation basse comprend un bouton **Applications**.
 L'icône correspondante est maintenant correctement chargée grâce à l'ajout de
 l'icône `list` dans `IconManager`.
+ywlsg1-codex/2025-06-05
 
 La page Profil intègre un tri visuel des applications installées via SortableJS.
 L'utilisateur peut glisser-déposer les tuiles pour définir son ordre préféré,
 qui est enregistré aussitôt.
+=======
+uk9xnl-codex/2025-06-05
+
+La sidebar propose également un mode compact activé par un bouton placé
+directement dans son en-tête. Celui-ci affiche une icône en chevron orientée
+suivant la position de la barre et n'affiche le logo "C2R" que lorsque la barre
+est ouverte.
+=======
+Le bouton hamburger a été retiré au profit de cette barre de navigation basse.
+
+bpqc46-codex/2025-06-05
+La barre latérale bénéficie désormais d'un fond dégradé gris et d'une ombre pour s'intégrer harmonieusement aux thèmes sombre et clair.
+
+La sidebar propose également un mode compact activé par un bouton placé
+directement dans son en-tête. Ce bouton se situe en haut à droite ou à gauche
+suivant la position de la barre et permet d'afficher uniquement les icônes.
+main
+main
+main

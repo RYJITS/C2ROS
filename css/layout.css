@@ -17,7 +17,7 @@ body.sidebar-right {
 /* Sidebar */
 .sidebar {
     grid-area: sidebar;
-    background: linear-gradient(#1a1a1a, #000);
+    background: linear-gradient(var(--c2r-bg-secondary), var(--c2r-bg));
     border-right: 1px solid var(--c2r-border);
     display: flex;
     flex-direction: column;
@@ -27,12 +27,14 @@ body.sidebar-right {
     z-index: var(--z-sidebar);
     transition: var(--c2r-transition);
     border-radius: 0 12px 12px 0;
+    box-shadow: var(--c2r-shadow-lg);
 }
 
 body.sidebar-right .sidebar {
     border-right: none;
     border-left: 1px solid var(--c2r-border);
     border-radius: 12px 0 0 12px;
+    box-shadow: var(--c2r-shadow-lg);
 }
 
 .sidebar-header {
@@ -146,45 +148,6 @@ body.sidebar-right .sidebar {
     color: var(--c2r-text);
 }
 
-/* Hamburger menu mobile */
-.hamburger {
-    display: none;
-    position: fixed;
-    top: var(--c2r-spacing-md);
-    left: var(--c2r-spacing-md);
-    z-index: calc(var(--z-sidebar) + 1);
-    background-color: var(--c2r-bg-card);
-    border: 1px solid var(--c2r-border);
-    border-radius: var(--c2r-radius);
-    padding: var(--c2r-spacing-sm);
-    cursor: pointer;
-    flex-direction: column;
-    gap: 4px;
-    transition: var(--c2r-transition);
-}
-
-.hamburger:hover {
-    background-color: var(--c2r-bg-hover);
-}
-
-.hamburger-line {
-    width: 20px;
-    height: 2px;
-    background-color: var(--c2r-text);
-    transition: var(--c2r-transition);
-}
-
-.hamburger.active .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active .hamburger-line:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-}
 
 /* Contenu principal */
 .main-content {
@@ -591,9 +554,6 @@ body.sidebar-right .sidebar {
         display: block;
     }
     
-    .hamburger {
-        display: flex;
-    }
     
     .main-content {
         padding: calc(60px + var(--c2r-spacing-md)) var(--c2r-spacing-md) calc(60px + var(--c2r-spacing-md));
