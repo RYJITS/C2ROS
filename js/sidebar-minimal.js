@@ -27,6 +27,7 @@ class SidebarMinimal {
 
         const toggleBtn = document.createElement('button');
         toggleBtn.className = 'sidebar-toggle-minimal';
+uk9xnl-codex/2025-06-05
         toggleBtn.title = 'Basculer sidebar minimaliste';
         toggleBtn.setAttribute('aria-label', 'Basculer sidebar minimaliste');
 
@@ -34,12 +35,21 @@ class SidebarMinimal {
         icon.className = 'nav-icon';
         toggleBtn.appendChild(icon);
 
+=======
+        toggleBtn.innerHTML = '⚡';
+        toggleBtn.title = 'Basculer sidebar minimaliste';
+        toggleBtn.setAttribute('aria-label', 'Basculer sidebar minimaliste');
+
+main
         toggleBtn.addEventListener('click', () => {
             this.toggleMinimalSidebar();
         });
 
         sidebar.appendChild(toggleBtn);
+uk9xnl-codex/2025-06-05
         this.updateToggleButtonIcon();
+=======
+main
     }
     
     /**
