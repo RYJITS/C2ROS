@@ -301,10 +301,7 @@ body.sidebar-right .sidebar .sidebar-toggle-minimal {
 .sidebar-toggle-minimal:hover {
     background-color: var(--c2r-bg-hover);
     color: var(--c2r-text);
-uc0ehg-codex/2025-06-05
     transform: scale(1.1);
-=======
-main
 }
 
 /* Masquer sur mobile */

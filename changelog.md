@@ -1,33 +1,21 @@
-uc0ehg-codex/2025-06-05
 # 📝 C2R OS - Journal des modifications
-=======
-# 📝 C2R OS - Journal des modifications
-main
 
 ## [1.1.0] - 2025-06-06 "DragDrop"
 
 ### 🚀 Nouvelles fonctionnalités
-- Réorganisation des applications depuis la page Profil via glisser-déposer
-  (SortableJS), compatible mobile et desktop.
+- Réorganisation des applications depuis la page Profil via glisser-déposer (SortableJS), compatible mobile et desktop.
 
-## [1.0.2] - 2025-06-05 "UX"
+## [1.0.5] - 2025-06-08 "Fix"
 
-### ✨ Améliorations de l'interface
-- Alignement des icônes "installer" et "poubelle" à droite des tuiles du Store pour plus de cohérence.
+### 🐛 Correctifs
+- Les icônes "installer" et "poubelle" conservent leur design lors de la recherche ou du filtrage dans le Store.
 
-## [1.0.1] - 2025-06-05 "Docs"
+## [1.0.4] - 2025-06-07 "UI"
 
-### 📄 Documentation
-- Ajout des fichiers `docs/*-readme.md` décrivant les modules.
-
-uc0ehg-codex/2025-06-05
-## [1.0.0] - 2025-05-27 "Genesis"
-=======
-## [1.0.0] - 2025-05-27 "Genesis"
-gomuxy-codex/2025-06-05
-
-# 📝 C2R OS - Journal des modifications
-main
+### ♻️ Navigation mobile simplifiée
+- Suppression du menu hamburger au profit de la barre de navigation basse.
+- Correction de la couleur des icônes de désinstallation sur mobile.
+- Le bouton de réduction est intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position. Le logo "C2R" n'est visible qu'en mode étendu.
 
 ## [1.0.3] - 2025-06-06 "UI"
 
@@ -44,13 +32,9 @@ main
 ### 📄 Documentation
 - Ajout des fichiers `docs/*-readme.md` décrivant les modules.
 
-uc0ehg-codex/2025-06-05
 ## [1.0.0] - 2025-05-27 "Genesis"
-=======
-## [1.0.0] - 2025-05-27 "Genesis"
-=======
-main
-main
+
+---
 
 ### 🆕 Nouvelles fonctionnalités réelles implémentées
 
@@ -222,7 +206,7 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 - Amélioration de l'accessibilité
 - Tests automatisés
 
-### Version 1.2.0 - "Expansion"  
+### Version 1.2.0 - "Expansion"
 - Ajout de nouvelles applications
 - Système de thèmes personnalisables
 - Gestionnaire de fichiers intégré
@@ -254,7 +238,7 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 
 ## 🐛 Bugs connus résolus
 
- Problèmes initiaux
+Problèmes initiaux
 - Modal d'authentification se fermait toute seule
 - Applications n'apparaissaient pas dans la sidebar
 - Bouton déconnexion ne fonctionnait pas
@@ -273,46 +257,3 @@ Documentation
 - Ajout du fichier `docs/icon-workflow.md` pour la gestion Design → Dev des icônes.
 - Migration vers la librairie **Font Awesome** pour toutes les icônes (chargement via CDN).
 *Journal maintenu à jour à chaque modification significative du système*
-
-## [1.0.3] - 2025-06-06 "UI"
-
-gomuxy-codex/2025-06-05
-### ✨ Améliorations de la sidebar
-uc0ehg-codex/2025-06-05
-- Le bouton de réduction est désormais intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position.
-- Le logo "C2R" n'est visible qu'en mode étendu de la barre.
-- Le bouton de réduction est désormais intégré à la barre latérale elle-même,
-  placé dans l'en-tête. Sa position s'adapte lorsque la barre passe à droite.
-
-## [1.0.4] - 2025-06-07 "UI"
-
-### ♻️ Navigation mobile simplifiée
-- Suppression du menu hamburger au profit de la barre de navigation basse.
-- Correction de la couleur bleue des icônes de désinstallation sur mobile.
-=======
-- Le bouton de réduction est désormais intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position.
-- Le logo "C2R" n'est visible qu'en mode étendu de la barre.
-=======
-### ✨ Améliorations de la sidebar
-- Le bouton de réduction est désormais intégré à la barre latérale elle-même,
-  placé dans l'en-tête. L'icône passe d'une croix à un petit carré selon l'état
-  de la barre et sa position s'adapte lorsqu'elle est à droite.
-main
-
-0bhix5-codex/2025-06-05
-## [1.0.4] - 2025-06-07 "UI"
-
-### ♻️ Navigation mobile simplifiée
-- Suppression du menu hamburger au profit de la barre de navigation basse.
-
-## [1.0.5] - 2025-06-08 "Fix"
-
-### 🐛 Correctifs
-- Les icônes "installer" et "poubelle" conservent leur design lors de la recherche ou du filtrage dans le Store.
-=======
-## [1.0.4] - 2025-06-07 "UI"
-
-### ♻️ Navigation mobile simplifiée
-- Suppression du menu hamburger au profit de la barre de navigation basse.
-main
-main
