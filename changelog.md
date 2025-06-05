@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.0.3] - 2025-06-06 "UI"
+
+### ✨ Interface
+- La barre latérale utilise un dégradé de gris avec une ombre portée pour un rendu cohérent en mode sombre et clair.
+
 ## [1.0.2] - 2025-06-05 "UX"
 
 ### ✨ Améliorations de l'interface

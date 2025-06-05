@@ -15,6 +15,10 @@ En mode mobile, la barre de navigation basse comprend un bouton **Applications**
 L'icône correspondante est maintenant correctement chargée grâce à l'ajout de
 l'icône `list` dans `IconManager`.
 
+bpqc46-codex/2025-06-05
+La barre latérale bénéficie désormais d'un fond dégradé gris et d'une ombre pour s'intégrer harmonieusement aux thèmes sombre et clair.
+
 La sidebar propose également un mode compact activé par un bouton placé
 directement dans son en-tête. Ce bouton se situe en haut à droite ou à gauche
 suivant la position de la barre et permet d'afficher uniquement les icônes.
+main

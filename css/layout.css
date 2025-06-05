@@ -17,7 +17,7 @@ body.sidebar-right {
 /* Sidebar */
 .sidebar {
     grid-area: sidebar;
-    background: linear-gradient(#1a1a1a, #000);
+    background: linear-gradient(var(--c2r-bg-secondary), var(--c2r-bg));
     border-right: 1px solid var(--c2r-border);
     display: flex;
     flex-direction: column;
@@ -27,12 +27,14 @@ body.sidebar-right {
     z-index: var(--z-sidebar);
     transition: var(--c2r-transition);
     border-radius: 0 12px 12px 0;
+    box-shadow: var(--c2r-shadow-lg);
 }
 
 body.sidebar-right .sidebar {
     border-right: none;
     border-left: 1px solid var(--c2r-border);
     border-radius: 12px 0 0 12px;
+    box-shadow: var(--c2r-shadow-lg);
 }
 
 .sidebar-header {
