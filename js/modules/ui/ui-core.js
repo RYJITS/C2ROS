@@ -227,11 +227,10 @@ class UICore {
         document.querySelectorAll('.nav-link').forEach(link => {
             link.classList.remove('active');
         });
-        
-        const activeLink = document.querySelector(`[data-page="${this.currentPage}"]`);
-        if (activeLink) {
-            activeLink.classList.add('active');
-        }
+
+        document.querySelectorAll(`[data-page="${this.currentPage}"]`).forEach(link => {
+            link.classList.add('active');
+        });
     }
     
     /**
