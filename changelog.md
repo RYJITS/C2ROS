@@ -5,6 +5,7 @@
 ### 🚀 Nouvelles fonctionnalités
 - Réorganisation des applications depuis la page Profil via glisser-déposer
   (SortableJS), compatible mobile et desktop.
+- Ajout d'un bouton de déconnexion dans la page Profil.
 
 ## [1.0.2] - 2025-06-05 "UX"
 
@@ -247,6 +248,12 @@ Documentation
   placé dans l'en-tête. L'icône passe d'une croix à un petit carré selon l'état
   de la barre et sa position s'adapte lorsqu'elle est à droite.
 
+ptneoa-codex/2025-06-05
+## [1.0.4] - 2025-06-07 "UI"
+
+### ♻️ Navigation mobile simplifiée
+- Suppression du menu hamburger au profit de la barre de navigation basse.
+=======
 ## [1.0.4] - 2025-06-07 "UI"
 
 ### ♻️ Navigation mobile simplifiée
@@ -256,3 +263,4 @@ Documentation
 
 ### 🐛 Correctifs
 - Les icônes "installer" et "poubelle" conservent leur design lors de la recherche ou du filtrage dans le Store.
+main

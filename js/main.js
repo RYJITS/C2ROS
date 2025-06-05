@@ -70,26 +70,25 @@ function initializeUserInterface() {
  * @param {boolean} isConnected - État de connexion
  */
 function updateConnectionStatus(isConnected) {
-    const logoutBtn = document.getElementById('logout-btn');
+    const logoutBtns = document.querySelectorAll('.btn-logout');
     const userOnlySections = document.querySelectorAll('.user-only');
-    
-    if (logoutBtn) {
+
+    logoutBtns.forEach(btn => {
         if (isConnected) {
-            logoutBtn.style.display = 'flex';
-            logoutBtn.innerHTML = `
+            btn.style.display = 'flex';
+            btn.innerHTML = `
                 <span class="nav-icon">${IconManager.getIcon('signout')}</span>
                 <span class="nav-text">Déconnexion</span>
             `;
         } else {
-            logoutBtn.style.display = 'flex';
-            logoutBtn.innerHTML = `
+            btn.style.display = 'flex';
+            btn.innerHTML = `
                 <span class="nav-icon">${IconManager.getIcon('signout')}</span>
                 <span class="nav-text">Se connecter</span>
             `;
-            // Changer le gestionnaire d'événement
-            logoutBtn.onclick = () => showAuthModal('login');
+            btn.onclick = () => showAuthModal('login');
         }
-    }
+    });
     
     // Afficher/masquer les sections utilisateur
     userOnlySections.forEach(section => {
@@ -569,7 +568,7 @@ function setupAuthEventListeners() {
     const showLoginLink = document.getElementById('show-login');
     const loginForm = document.getElementById('login-form');
     const registerForm = document.getElementById('register-form');
-    const logoutBtn = document.getElementById('logout-btn');
+    const logoutBtns = document.querySelectorAll('.btn-logout');
     
     // Bouton de fermeture (X)
     if (closeBtn) {
@@ -622,8 +621,8 @@ function setupAuthEventListeners() {
     }
     
     // Gestionnaire du bouton déconnexion/connexion
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', () => {
+    logoutBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
             const userCore = window.C2R_SYSTEM?.userCore;
             if (userCore && userCore.getCurrentUser()) {
                 handleLogout();
@@ -631,7 +630,7 @@ function setupAuthEventListeners() {
                 showAuthModal('login');
             }
         });
-    }
+    });
 }
 
 /**

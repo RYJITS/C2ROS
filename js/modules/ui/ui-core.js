@@ -148,12 +148,12 @@ class UICore {
      */
     setupActionButtons() {
         // Bouton déconnexion
-        const logoutBtn = document.getElementById('logout-btn');
-        if (logoutBtn) {
-            logoutBtn.addEventListener('click', () => {
+        const logoutBtns = document.querySelectorAll('.btn-logout');
+        logoutBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
                 this.handleLogout();
             });
-        }
+        });
         
         // Boutons de préférences
         const themeToggle = document.getElementById('theme-toggle');
