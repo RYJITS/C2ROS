@@ -78,6 +78,7 @@
     --c2r-warning: #f59e0b;
     --c2r-error: #ef4444;
     --c2r-info: #3b82f6;
+    --icon-color: #ffffff;
     
     /* Ombres pour thème sombre */
     --c2r-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -113,6 +114,7 @@
     --c2r-warning: #d97706;
     --c2r-error: #dc2626;
     --c2r-info: #2563eb;
+    --icon-color: #1a1a1a;
     
     /* Ombres pour thème clair */
     --c2r-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
