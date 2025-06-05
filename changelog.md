@@ -1,3 +1,24 @@
+ywlsg1-codex/2025-06-05
+# 📝 C2R OS - Journal des modifications
+
+## [1.1.0] - 2025-06-06 "DragDrop"
+
+### 🚀 Nouvelles fonctionnalités
+- Réorganisation des applications depuis la page Profil via glisser-déposer
+  (SortableJS), compatible mobile et desktop.
+
+## [1.0.2] - 2025-06-05 "UX"
+
+### ✨ Améliorations de l'interface
+- Alignement des icônes "installer" et "poubelle" à droite des tuiles du Store pour plus de cohérence.
+
+## [1.0.1] - 2025-06-05 "Docs"
+
+### 📄 Documentation
+- Ajout des fichiers `docs/*-readme.md` décrivant les modules.
+
+## [1.0.0] - 2025-05-27 "Genesis"
+=======
 # 📝 C2R OS - Journal des modifications
 
 ## [1.0.3] - 2025-06-06 "UI"
@@ -16,6 +37,7 @@
 - Ajout des fichiers `docs/*-readme.md` décrivant les modules.
 
 ## [1.0.0] - 2025-05-27 "Genesis"
+main
 
 ### 🆕 Nouvelles fonctionnalités réelles implémentées
 
