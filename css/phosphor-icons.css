@@ -9,6 +9,7 @@
     line-height: 1;
     vertical-align: middle;
     transition: all 0.2s ease;
+    color: var(--icon-color);
 }
 
 /* Icônes de navigation */
@@ -88,8 +89,11 @@
 
 /* Effets hover pour les icônes interactives */
 .nav-link:hover .ph,
+.nav-link:active .ph,
 .btn:hover .ph,
-.app-card:hover .ph {
+.btn:active .ph,
+.app-card:hover .ph,
+.app-card:active .ph {
     transform: scale(1.1);
     color: var(--primary-color);
 }
