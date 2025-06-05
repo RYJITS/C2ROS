@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.0.1] - 2025-06-05 "Docs"
+
+### 📄 Documentation
+- Ajout des fichiers `docs/*-readme.md` décrivant les modules.
+
 ## [1.0.0] - 2025-05-27 "Genesis"
 
 ### 🆕 Nouvelles fonctionnalités réelles implémentées
