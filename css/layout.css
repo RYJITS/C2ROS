@@ -383,6 +383,13 @@ body.sidebar-right .sidebar {
     transition: var(--c2r-transition);
 }
 
+/* Effet lors du déplacement d'une application */
+.app-item.dragging {
+    transform: scale(1.05);
+    background-color: var(--c2r-bg-active);
+    box-shadow: var(--c2r-shadow-md);
+}
+
 .app-item:hover {
     background-color: var(--c2r-bg-hover);
 }
