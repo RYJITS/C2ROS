@@ -22,17 +22,20 @@ class SidebarMinimal {
      * Créer le bouton de basculement
      */
     createToggleButton() {
+        const sidebar = document.getElementById('sidebar');
+        if (!sidebar) return;
+
         const toggleBtn = document.createElement('button');
         toggleBtn.className = 'sidebar-toggle-minimal';
         toggleBtn.innerHTML = '⚡';
         toggleBtn.title = 'Basculer sidebar minimaliste';
         toggleBtn.setAttribute('aria-label', 'Basculer sidebar minimaliste');
-        
+
         toggleBtn.addEventListener('click', () => {
             this.toggleMinimalSidebar();
         });
-        
-        document.body.appendChild(toggleBtn);
+
+        sidebar.appendChild(toggleBtn);
     }
     
     /**

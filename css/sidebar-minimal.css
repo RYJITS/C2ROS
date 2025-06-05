@@ -285,9 +285,9 @@ body.minimal-sidebar .btn-logout:active {
 
 /* Bouton de basculement */
 .sidebar-toggle-minimal {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     background-color: var(--c2r-bg-card);
     border: 1px solid var(--c2r-border);
     border-radius: 50%;
@@ -300,6 +300,11 @@ body.minimal-sidebar .btn-logout:active {
     z-index: 1001;
     transition: var(--c2r-transition);
     font-size: 18px;
+}
+
+body.sidebar-right .sidebar .sidebar-toggle-minimal {
+    right: auto;
+    left: 10px;
 }
 
 .sidebar-toggle-minimal:hover {
