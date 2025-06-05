@@ -5,6 +5,13 @@
     --c2r-accent: #E53935;
     --c2r-accent-hover: #F74B45;
     --c2r-accent-light: #FF7669;
+
+    /* Alias pour la coloration des icônes */
+    --primary-color: var(--c2r-accent);
+    --success-color: var(--c2r-success);
+    --warning-color: var(--c2r-warning);
+    --error-color: var(--c2r-error);
+    --info-color: var(--c2r-info);
     
     /* Espacement et bordures */
     --c2r-radius: 12px;
