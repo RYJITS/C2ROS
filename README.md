@@ -6,16 +6,10 @@ Les icônes Font Awesome sont chargées via CDN. Le fichier `index.html` référ
 
 - Voir [`docs/icon-workflow.md`](docs/icon-workflow.md) pour le workflow complet des icônes.
 - La documentation de chaque module se trouve dans `docs/*-readme.md`.
-85811w-codex/2025-06-05
 - La liste des pop-ups indispensables figure dans [`docs/popup-readme.md`](docs/popup-readme.md).
 
 Le Store propose un bouton unique pour installer ou désinstaller une application. Les icônes restent alignées à droite et conservent leur couleur en mode sombre. Un bouton **Applications** apparaît sur mobile et les applications installées peuvent être réordonnées par glisser-déposer. Le filtre par type (applications, informations, services, formations) permet désormais de trier le catalogue.
-=======
-ptneoa-codex/2025-06-05
-- La liste des pop-ups indispensables figure dans
-  [`docs/popup-readme.md`](docs/popup-readme.md).
-=======
-main
+
 - Le Store propose un bouton unique pour installer ou désinstaller une application : l'icône « plus » devient une poubelle rouge.
 - Les icônes d'installation sont alignées à droite des tuiles pour plus de clarté.
 - En mode sombre, la poubelle reste rouge et la taille des icônes est réduite pour le mobile.
@@ -24,7 +18,6 @@ main
 - Un bouton de déconnexion est disponible dans la page Profil.
 - La barre latérale intègre un bouton de réduction : l'icône passe d'une croix à un petit carré suivant l'état de la barre.
 - La barre latérale utilise un dégradé de gris et une ombre portée pour s'intégrer au thème.
-main
 
 ## Aperçu local
 

@@ -25,36 +25,20 @@ class SidebarMinimal {
         const sidebar = document.getElementById('sidebar');
         if (!sidebar) return;
 
-85811w-codex/2025-06-05
         const toggleBtn = document.createElement('button');
         toggleBtn.className = 'sidebar-toggle-minimal';
         toggleBtn.title = 'Basculer sidebar minimaliste';
         toggleBtn.setAttribute('aria-label', 'Basculer sidebar minimaliste');
-
-=======
-        const toggleBtn = document.createElement('button');
-        toggleBtn.className = 'sidebar-toggle-minimal';
-        toggleBtn.title = 'Basculer sidebar minimaliste';
-        toggleBtn.setAttribute('aria-label', 'Basculer sidebar minimaliste');
-
-main
         const icon = document.createElement('span');
         icon.className = 'nav-icon';
         toggleBtn.appendChild(icon);
         toggleBtn.addEventListener('click', () => {
             this.toggleMinimalSidebar();
         });
-85811w-codex/2025-06-05
 
         sidebar.appendChild(toggleBtn);
         this.updateToggleButtonIcon();
     }
-=======
-
-        sidebar.appendChild(toggleBtn);
-        this.updateToggleButtonIcon();
-    }
-main
     
     /**
      * Ajouter les tooltips aux éléments de navigation

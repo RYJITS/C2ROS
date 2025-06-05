@@ -63,6 +63,11 @@
     color: var(--error-color) !important;
 }
 
+/* Poubelle rouge en mode sidebar minimaliste */
+.minimal-sidebar .app-toggle-btn.installed .icon {
+    color: var(--error-color) !important;
+}
+
 /* Icônes de statut */
 .status-icon .icon {
     font-size: 1rem;
