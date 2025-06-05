@@ -11,9 +11,13 @@ Les icônes Font Awesome sont désormais chargées via CDN afin d'éviter les pr
 - Sur les tuiles du Store, l'icône d'installation ou de suppression est alignée à droite pour une interface plus claire.
 - En mode sombre, la poubelle conserve sa couleur rouge et la taille des icônes d'installation a été réduite pour un meilleur rendu mobile.
 - En affichage mobile, un bouton "Applications" est disponible dans la barre de navigation basse.
+q892t8-codex/2025-06-05
+- Le menu hamburger a disparu : la barre de navigation basse gère désormais la navigation mobile.
+
 bpqc46-codex/2025-06-05
 - La barre latérale adopte désormais un dégradé de gris avec ombre portée pour mieux s'intégrer au thème sombre ou clair.
 
+main
 - La barre latérale possède désormais un bouton intégré permettant de passer en mode compact. Ce bouton se place automatiquement de l'autre côté si la barre est à droite.
 main
 
