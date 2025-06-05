@@ -280,9 +280,9 @@ function renderFileList() {
     }
     
     fileList.innerHTML = notepadApp.files.map((file, index) => `
-        <div class="file-item" data-filename="${file.name}" onclick="selectFile('${file.name}')">
+        <div class="file-item" data-filename="${escapeHtml(file.name)}" onclick="selectFile('${file.name}')">
             <div class="file-info">
-                <div class="file-name">${file.name}</div>
+                <div class="file-name">${escapeHtml(file.name)}</div>
                 <div class="file-date">${new Date(file.lastModified).toLocaleString('fr-FR')} • ${file.size} caractères</div>
             </div>
             <div class="file-actions">
@@ -608,6 +608,12 @@ function loadSavedFiles() {
         console.error('Erreur chargement fichiers:', error);
         notepadApp.files = [];
     }
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
 }
 
 /**
