@@ -22,17 +22,24 @@ class SidebarMinimal {
      * Créer le bouton de basculement
      */
     createToggleButton() {
+        const sidebar = document.getElementById('sidebar');
+        if (!sidebar) return;
+
         const toggleBtn = document.createElement('button');
         toggleBtn.className = 'sidebar-toggle-minimal';
-        toggleBtn.innerHTML = '⚡';
         toggleBtn.title = 'Basculer sidebar minimaliste';
         toggleBtn.setAttribute('aria-label', 'Basculer sidebar minimaliste');
-        
+
+        const icon = document.createElement('span');
+        icon.className = 'nav-icon';
+        toggleBtn.appendChild(icon);
+
         toggleBtn.addEventListener('click', () => {
             this.toggleMinimalSidebar();
         });
-        
-        document.body.appendChild(toggleBtn);
+
+        sidebar.appendChild(toggleBtn);
+        this.updateToggleButtonIcon();
     }
     
     /**
@@ -146,9 +153,9 @@ class SidebarMinimal {
         // Mettre à jour le bouton de basculement
         const toggleBtn = document.querySelector('.sidebar-toggle-minimal');
         if (toggleBtn) {
-            toggleBtn.innerHTML = '📋';
             toggleBtn.title = 'Sidebar normale';
         }
+        this.updateToggleButtonIcon();
         
         // Animation de transition
         this.addTransitionClass();
@@ -166,9 +173,9 @@ class SidebarMinimal {
         // Mettre à jour le bouton de basculement
         const toggleBtn = document.querySelector('.sidebar-toggle-minimal');
         if (toggleBtn) {
-            toggleBtn.innerHTML = '⚡';
             toggleBtn.title = 'Sidebar minimaliste';
         }
+        this.updateToggleButtonIcon();
         
         // Animation de transition
         this.addTransitionClass();
@@ -196,6 +203,23 @@ class SidebarMinimal {
                 mainContent.classList.remove('sidebar-transition');
             }, 300);
         }
+    }
+
+    /**
+     * Mettre à jour l'icône du bouton de basculement
+     */
+    updateToggleButtonIcon() {
+        const icon = document.querySelector('.sidebar-toggle-minimal .nav-icon');
+        if (!icon) return;
+
+        const isRight = document.body.classList.contains('sidebar-right');
+        if (this.isMinimal) {
+            icon.dataset.icon = isRight ? 'chevron-left' : 'chevron-right';
+        } else {
+            icon.dataset.icon = isRight ? 'chevron-right' : 'chevron-left';
+        }
+
+        window.IconManager?.inject(icon);
     }
     
     /**

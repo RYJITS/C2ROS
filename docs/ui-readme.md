@@ -14,3 +14,8 @@ L'affichage sombre maintient cette couleur rouge et la taille de ce bouton a
 En mode mobile, la barre de navigation basse comprend un bouton **Applications**.
 L'icône correspondante est maintenant correctement chargée grâce à l'ajout de
 l'icône `list` dans `IconManager`.
+
+La sidebar propose également un mode compact activé par un bouton placé
+directement dans son en-tête. Celui-ci affiche une icône en chevron orientée
+suivant la position de la barre et n'affiche le logo "C2R" que lorsque la barre
+est ouverte.
