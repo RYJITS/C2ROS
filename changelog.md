@@ -248,7 +248,19 @@ Documentation
   placé dans l'en-tête. L'icône passe d'une croix à un petit carré selon l'état
   de la barre et sa position s'adapte lorsqu'elle est à droite.
 
+ptneoa-codex/2025-06-05
 ## [1.0.4] - 2025-06-07 "UI"
 
 ### ♻️ Navigation mobile simplifiée
 - Suppression du menu hamburger au profit de la barre de navigation basse.
+=======
+## [1.0.4] - 2025-06-07 "UI"
+
+### ♻️ Navigation mobile simplifiée
+- Suppression du menu hamburger au profit de la barre de navigation basse.
+
+## [1.0.5] - 2025-06-08 "Fix"
+
+### 🐛 Correctifs
+- Les icônes "installer" et "poubelle" conservent leur design lors de la recherche ou du filtrage dans le Store.
+main

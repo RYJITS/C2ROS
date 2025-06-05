@@ -6,8 +6,11 @@ Les icônes Font Awesome sont chargées via CDN. Le fichier `index.html` référ
 
 - Voir [`docs/icon-workflow.md`](docs/icon-workflow.md) pour le workflow complet des icônes.
 - La documentation de chaque module se trouve dans `docs/*-readme.md`.
+ptneoa-codex/2025-06-05
 - La liste des pop-ups indispensables figure dans
   [`docs/popup-readme.md`](docs/popup-readme.md).
+=======
+main
 - Le Store propose un bouton unique pour installer ou désinstaller une application : l'icône « plus » devient une poubelle rouge.
 - Les icônes d'installation sont alignées à droite des tuiles pour plus de clarté.
 - En mode sombre, la poubelle reste rouge et la taille des icônes est réduite pour le mobile.
