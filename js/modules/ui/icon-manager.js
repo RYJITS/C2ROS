@@ -45,7 +45,9 @@
         wind: '<i class="icon fa-solid fa-wind"></i>',
         thermometer: '<i class="icon fa-solid fa-temperature-half"></i>',
         circle: '<i class="icon fa-solid fa-circle"></i>',
-        'map-pin': '<i class="icon fa-solid fa-map-pin"></i>'
+        'map-pin': '<i class="icon fa-solid fa-map-pin"></i>',
+        'chevron-left': '<i class="icon fa-solid fa-chevron-left"></i>',
+        'chevron-right': '<i class="icon fa-solid fa-chevron-right"></i>'
     };
 
     let observer = null;

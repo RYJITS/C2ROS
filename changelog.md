@@ -219,13 +219,13 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 
 ## 🐛 Bugs connus résolus
 
-### ❌ Problèmes initiaux
+ Problèmes initiaux
 - Modal d'authentification se fermait toute seule
 - Applications n'apparaissaient pas dans la sidebar
 - Bouton déconnexion ne fonctionnait pas
 - État de connexion perdu au rechargement
 
-### ✅ Solutions appliquées
+Solutions appliquées
 - Correction des gestionnaires d'événements
 - Ajout d'appels directs à `updateSidebarApps()`
 - Implémentation de `updateConnectionStatus()`
@@ -234,7 +234,7 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 
 ---
 
-### 📄 Documentation
+Documentation
 - Ajout du fichier `docs/icon-workflow.md` pour la gestion Design → Dev des icônes.
 - Migration vers la librairie **Font Awesome** pour toutes les icônes (chargement via CDN).
 *Journal maintenu à jour à chaque modification significative du système*
@@ -242,6 +242,10 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 ## [1.0.3] - 2025-06-06 "UI"
 
 ### ✨ Améliorations de la sidebar
+uk9xnl-codex/2025-06-05
+- Le bouton de réduction est désormais intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position.
+- Le logo "C2R" n'est visible qu'en mode étendu de la barre.
+=======
 - Le bouton de réduction est désormais intégré à la barre latérale elle-même,
   placé dans l'en-tête. Sa position s'adapte lorsque la barre passe à droite.
 
@@ -249,3 +253,4 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 
 ### ♻️ Navigation mobile simplifiée
 - Suppression du menu hamburger au profit de la barre de navigation basse.
+main

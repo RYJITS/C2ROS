@@ -31,13 +31,7 @@ body.minimal-sidebar .sidebar-header {
 }
 
 body.minimal-sidebar .logo {
-    font-size: 18px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
 }
 
 /* Navigation minimaliste */
@@ -221,10 +215,7 @@ body.minimal-sidebar .btn-logout:active {
     }
     
     body.minimal-sidebar .logo {
-        writing-mode: initial;
-        text-orientation: initial;
-        height: auto;
-        font-size: var(--font-size-xl);
+        display: none;
     }
     
     body.minimal-sidebar .nav-link {
@@ -288,6 +279,20 @@ body.minimal-sidebar .btn-logout:active {
     position: absolute;
     top: 10px;
     right: 10px;
+uk9xnl-codex/2025-06-05
+    background: none;
+    border: none;
+    border-radius: var(--c2r-radius);
+    padding: var(--c2r-spacing-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+    transition: var(--c2r-transition);
+    color: var(--c2r-text-secondary);
+    font-size: 1rem;
+=======
     background-color: var(--c2r-bg-card);
     border: 1px solid var(--c2r-border);
     border-radius: 50%;
@@ -300,6 +305,7 @@ body.minimal-sidebar .btn-logout:active {
     z-index: 1001;
     transition: var(--c2r-transition);
     font-size: 18px;
+main
 }
 
 body.sidebar-right .sidebar .sidebar-toggle-minimal {
@@ -307,10 +313,17 @@ body.sidebar-right .sidebar .sidebar-toggle-minimal {
     left: 10px;
 }
 
+uk9xnl-codex/2025-06-05
+.sidebar-toggle-minimal:hover {
+    background-color: var(--c2r-bg-hover);
+    color: var(--c2r-text);
+}
+=======
 .sidebar-toggle-minimal:hover {
     background-color: var(--c2r-bg-hover);
     transform: scale(1.1);
 }
+main
 
 /* Masquer sur mobile */
 @media (max-width: 768px) {
