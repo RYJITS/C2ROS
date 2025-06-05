@@ -27,29 +27,18 @@ class SidebarMinimal {
 
         const toggleBtn = document.createElement('button');
         toggleBtn.className = 'sidebar-toggle-minimal';
-uk9xnl-codex/2025-06-05
         toggleBtn.title = 'Basculer sidebar minimaliste';
         toggleBtn.setAttribute('aria-label', 'Basculer sidebar minimaliste');
 
         const icon = document.createElement('span');
         icon.className = 'nav-icon';
         toggleBtn.appendChild(icon);
-
-=======
-        toggleBtn.innerHTML = '⚡';
-        toggleBtn.title = 'Basculer sidebar minimaliste';
-        toggleBtn.setAttribute('aria-label', 'Basculer sidebar minimaliste');
-
-main
         toggleBtn.addEventListener('click', () => {
             this.toggleMinimalSidebar();
         });
 
         sidebar.appendChild(toggleBtn);
-uk9xnl-codex/2025-06-05
         this.updateToggleButtonIcon();
-=======
-main
     }
     
     /**
@@ -222,11 +211,10 @@ main
         const icon = document.querySelector('.sidebar-toggle-minimal .nav-icon');
         if (!icon) return;
 
-        const isRight = document.body.classList.contains('sidebar-right');
         if (this.isMinimal) {
-            icon.dataset.icon = isRight ? 'chevron-left' : 'chevron-right';
+            icon.dataset.icon = 'square';
         } else {
-            icon.dataset.icon = isRight ? 'chevron-right' : 'chevron-left';
+            icon.dataset.icon = 'close';
         }
 
         window.IconManager?.inject(icon);
