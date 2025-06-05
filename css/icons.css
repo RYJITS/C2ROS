@@ -50,6 +50,14 @@
     display: block;
 }
 
+.app-toggle-btn .icon {
+    color: white;
+}
+
+.app-toggle-btn.installed .icon {
+    color: var(--error-color);
+}
+
 /* Icônes de statut */
 .status-icon .icon {
     font-size: 1rem;
