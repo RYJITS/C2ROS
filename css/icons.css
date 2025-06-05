@@ -52,6 +52,11 @@
 
 .app-toggle-btn .icon {
     color: white;
+    font-size: 1.5rem;
+}
+
+.app-actions .app-toggle-btn .icon {
+    font-size: 1.5rem;
 }
 
 .app-toggle-btn.installed .icon {
@@ -160,15 +165,19 @@
     .icon {
         font-size: 1.1rem;
     }
-    
+
     .app-icon .icon {
         font-size: 1.8rem;
     }
-    
+
     .app-card .icon {
         font-size: 2rem;
     }
-    
+
+    .app-actions .app-toggle-btn .icon {
+        font-size: 1.3rem;
+    }
+
     .nav-icon .icon {
         font-size: 1rem;
     }
@@ -182,6 +191,7 @@
 .theme-dark .search-icon .icon {
     color: var(--text-secondary);
 }
+
 
 /* Icônes dans les notifications */
 .notification .icon {
@@ -215,6 +225,16 @@
 .theme-dark .icon,
 .dark-mode .icon {
     color: #fff;
+}
+
+.theme-dark .app-toggle-btn .icon,
+.dark-mode .app-toggle-btn .icon {
+    color: white;
+}
+
+.theme-dark .app-toggle-btn.installed .icon,
+.dark-mode .app-toggle-btn.installed .icon {
+    color: var(--error-color);
 }
 
 .theme-light .icon {
