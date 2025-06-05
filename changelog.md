@@ -5,6 +5,15 @@
 ### 📄 Documentation
 - Ajout des fichiers `docs/*-readme.md` décrivant les modules.
 
+## [1.0.2] - 2025-06-05 "Mobile"
+
+### 🎉 Améliorations
+- Barre de navigation basse pour smartphones
+- Icône "list" ajoutée pour ouvrir le menu des applications
+- Bouton "Vider le cache" dans les préférences
+- Affichage de l'heure de mise à jour
+- Espacements adaptés pour ne pas masquer le contenu
+
 ## [1.0.0] - 2025-05-27 "Genesis"
 
 ### 🆕 Nouvelles fonctionnalités réelles implémentées
