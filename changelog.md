@@ -1,4 +1,8 @@
+uc0ehg-codex/2025-06-05
 # 📝 C2R OS - Journal des modifications
+=======
+# 📝 C2R OS - Journal des modifications
+main
 
 ## [1.1.0] - 2025-06-06 "DragDrop"
 
@@ -16,10 +20,14 @@
 ### 📄 Documentation
 - Ajout des fichiers `docs/*-readme.md` décrivant les modules.
 
+uc0ehg-codex/2025-06-05
+## [1.0.0] - 2025-05-27 "Genesis"
+=======
 ## [1.0.0] - 2025-05-27 "Genesis"
 gomuxy-codex/2025-06-05
 
 # 📝 C2R OS - Journal des modifications
+main
 
 ## [1.0.3] - 2025-06-06 "UI"
 
@@ -36,8 +44,12 @@ gomuxy-codex/2025-06-05
 ### 📄 Documentation
 - Ajout des fichiers `docs/*-readme.md` décrivant les modules.
 
+uc0ehg-codex/2025-06-05
 ## [1.0.0] - 2025-05-27 "Genesis"
 =======
+## [1.0.0] - 2025-05-27 "Genesis"
+=======
+main
 main
 
 ### 🆕 Nouvelles fonctionnalités réelles implémentées
@@ -266,6 +278,18 @@ Documentation
 
 gomuxy-codex/2025-06-05
 ### ✨ Améliorations de la sidebar
+uc0ehg-codex/2025-06-05
+- Le bouton de réduction est désormais intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position.
+- Le logo "C2R" n'est visible qu'en mode étendu de la barre.
+- Le bouton de réduction est désormais intégré à la barre latérale elle-même,
+  placé dans l'en-tête. Sa position s'adapte lorsque la barre passe à droite.
+
+## [1.0.4] - 2025-06-07 "UI"
+
+### ♻️ Navigation mobile simplifiée
+- Suppression du menu hamburger au profit de la barre de navigation basse.
+- Correction de la couleur bleue des icônes de désinstallation sur mobile.
+=======
 - Le bouton de réduction est désormais intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position.
 - Le logo "C2R" n'est visible qu'en mode étendu de la barre.
 =======
@@ -279,3 +303,4 @@ main
 
 ### ♻️ Navigation mobile simplifiée
 - Suppression du menu hamburger au profit de la barre de navigation basse.
+main

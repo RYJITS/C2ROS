@@ -13,6 +13,12 @@ gomuxy-codex/2025-06-05
 - En mode sombre, la poubelle conserve sa couleur rouge et la taille des icônes d'installation a été réduite pour un meilleur rendu mobile.
 - En affichage mobile, un bouton "Applications" est disponible dans la barre de navigation basse.
 - Depuis la version 1.1.0, les applications installées peuvent être réordonnées par glisser-déposer directement dans la page Profil, sur mobile comme sur ordinateur.
+uc0ehg-codex/2025-06-05
+- Le menu hamburger a disparu : la barre de navigation basse gère désormais la navigation mobile.
+- La barre latérale adopte désormais un dégradé de gris avec ombre portée pour mieux s'intégrer au thème sombre ou clair.
+- La barre latérale possède désormais un bouton intégré permettant de passer en mode compact. Ce bouton se place automatiquement de l'autre côté si la barre est à droite.
+- Correction de la couleur bleue des icônes de désinstallation sur mobile ; elles apparaissent maintenant en rouge.
+=======
 - La barre latérale dispose d'un bouton intégré pour passer en mode compact. L'icône en chevron s'inverse automatiquement selon la position de la barre.
 - Le menu hamburger a disparu : la barre de navigation basse gère désormais la navigation mobile.
 - La barre latérale adopte désormais un dégradé de gris avec ombre portée pour mieux s'intégrer au thème sombre ou clair.
@@ -24,6 +30,7 @@ gomuxy-codex/2025-06-05
 - Depuis la version 1.1.0, les applications installées peuvent être réordonnées par glisser-déposer dans la page Profil.
 - La barre latérale intègre un bouton de réduction : l'icône passe d'une croix à un petit carré suivant l'état de la barre.
 - La barre latérale utilise un dégradé de gris et une ombre portée pour s'intégrer au thème.
+main
 main
 
 ## Aperçu local
