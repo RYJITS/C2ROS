@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.0.2] - 2025-06-05 "UX"
+
+### ✨ Améliorations de l'interface
+- Alignement des icônes "installer" et "poubelle" à droite des tuiles du Store pour plus de cohérence.
+
 ## [1.0.1] - 2025-06-05 "Docs"
 
 ### 📄 Documentation

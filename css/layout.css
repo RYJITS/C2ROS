@@ -359,6 +359,7 @@ body.sidebar-right .sidebar {
     display: flex;
     gap: var(--c2r-spacing-sm);
     margin-top: auto;
+    justify-content: flex-end;
 }
 
 .app-toggle-btn {
