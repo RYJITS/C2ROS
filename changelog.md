@@ -239,3 +239,8 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 ### ✨ Améliorations de la sidebar
 - Le bouton de réduction est désormais intégré à la barre latérale elle-même,
   placé dans l'en-tête. Sa position s'adapte lorsque la barre passe à droite.
+
+## [1.0.4] - 2025-06-07 "UI"
+
+### ♻️ Navigation mobile simplifiée
+- Suppression du menu hamburger au profit de la barre de navigation basse.
