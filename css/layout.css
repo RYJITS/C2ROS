@@ -361,6 +361,19 @@ body.sidebar-right .sidebar {
     margin-top: auto;
 }
 
+.app-toggle-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: var(--c2r-spacing-sm);
+    border-radius: var(--c2r-radius);
+    transition: var(--c2r-transition);
+}
+
+.app-toggle-btn:hover {
+    background-color: var(--c2r-bg-hover);
+}
+
 /* Profil */
 .profile-content {
     display: grid;

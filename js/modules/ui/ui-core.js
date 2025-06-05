@@ -281,21 +281,36 @@ class UICore {
                     <span>Taille: ${app.size}</span>
                 </div>
                 <div class="app-actions">
-                    ${appCore.isInstalled(app.id) ? 
-                        `<button class="btn btn-danger btn-small" onclick="window.C2R_SYSTEM.appCore.uninstallApp('${app.id}'); window.C2R_SYSTEM.uiCore.refreshApplicationsList();" aria-label="Désinstaller ${app.name}">
-                            <span>${IconManager.getIcon('uninstall')}</span> Désinstaller
-                        </button>` :
-                        `<button class="btn btn-primary btn-small" onclick="window.C2R_SYSTEM.appCore.installApp('${app.id}'); window.C2R_SYSTEM.uiCore.refreshApplicationsList(); window.C2R_SYSTEM.uiCore.showNotification('${app.name} installée!', 'success');" aria-label="Installer ${app.name}">
-                            <span>${IconManager.getIcon('install')}</span> Installer
-                        </button>`
-                    }
-                    ${appCore.isInstalled(app.id) ? 
-                        `<span class="badge badge-success">${IconManager.getIcon('check')} Installée</span>` : 
-                        `<span class="badge badge-info">${IconManager.getIcon('install')} Disponible</span>`
-                    }
+                    <button class="app-toggle-btn ${appCore.isInstalled(app.id) ? 'installed' : ''}"
+                            onclick="window.C2R_SYSTEM.uiCore.toggleApp('${app.id}')"
+                            aria-label="${appCore.isInstalled(app.id) ? 'Désinstaller' : 'Installer'}">
+                        <span class="icon">${IconManager.getIcon(appCore.isInstalled(app.id) ? 'uninstall' : 'install')}</span>
+                    </button>
                 </div>
             </div>
         `).join('');
+    }
+
+    /**
+     * Installer ou désinstaller une application selon son état actuel
+     * @param {string} appId - ID de l'application
+     */
+    toggleApp(appId) {
+        const appCore = window.C2R_SYSTEM?.appCore;
+        if (!appCore) return;
+
+        if (appCore.isInstalled(appId)) {
+            appCore.uninstallApp(appId);
+            this.showNotification('Application désinstallée', 'warning');
+        } else {
+            appCore.installApp(appId);
+            this.showNotification('Application installée', 'success');
+        }
+
+        this.refreshApplicationsList();
+        if (this.currentPage === 'profile') {
+            this.refreshUserProfile();
+        }
     }
     
     /**
