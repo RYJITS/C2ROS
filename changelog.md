@@ -220,6 +220,7 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 - Ajout d'appels directs à `updateSidebarApps()`
 - Implémentation de `updateConnectionStatus()`
 - Amélioration de la persistance des sessions
+- Correction de l'affichage de l'icône **Applications** dans la barre de navigation mobile
 
 ---
 
