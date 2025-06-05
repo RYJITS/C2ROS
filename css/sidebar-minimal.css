@@ -279,7 +279,6 @@ body.minimal-sidebar .btn-logout:active {
     position: absolute;
     top: 10px;
     right: 10px;
-uk9xnl-codex/2025-06-05
     background: none;
     border: none;
     border-radius: var(--c2r-radius);
@@ -292,20 +291,6 @@ uk9xnl-codex/2025-06-05
     transition: var(--c2r-transition);
     color: var(--c2r-text-secondary);
     font-size: 1rem;
-=======
-    background-color: var(--c2r-bg-card);
-    border: 1px solid var(--c2r-border);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 1001;
-    transition: var(--c2r-transition);
-    font-size: 18px;
-main
 }
 
 body.sidebar-right .sidebar .sidebar-toggle-minimal {
@@ -313,17 +298,10 @@ body.sidebar-right .sidebar .sidebar-toggle-minimal {
     left: 10px;
 }
 
-uk9xnl-codex/2025-06-05
 .sidebar-toggle-minimal:hover {
     background-color: var(--c2r-bg-hover);
     color: var(--c2r-text);
 }
-=======
-.sidebar-toggle-minimal:hover {
-    background-color: var(--c2r-bg-hover);
-    transform: scale(1.1);
-}
-main
 
 /* Masquer sur mobile */
 @media (max-width: 768px) {
