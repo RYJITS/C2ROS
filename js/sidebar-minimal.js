@@ -33,10 +33,6 @@ class SidebarMinimal {
         const icon = document.createElement('span');
         icon.className = 'nav-icon';
         toggleBtn.appendChild(icon);
-uc0ehg-codex/2025-06-05
-
-=======
-main
         toggleBtn.addEventListener('click', () => {
             this.toggleMinimalSidebar();
         });
