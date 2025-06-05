@@ -214,10 +214,10 @@ function renderFilteredApps(apps) {
             <div class="app-actions">
                 ${appCore.isInstalled(app.id) ?
                     `<button class="btn btn-danger btn-small" onclick="handleAppUninstall('${app.id}')" aria-label="Désinstaller ${app.name}">
-                        <span>${IconManager.getIcon('uninstall')}</span> Désinstaller
+                        Désinstaller <span>${IconManager.getIcon('uninstall')}</span>
                     </button>` :
                     `<button class="btn btn-primary btn-small" onclick="handleAppInstall('${app.id}')" aria-label="Installer ${app.name}">
-                        <span>${IconManager.getIcon('install')}</span> Installer
+                        Installer <span>${IconManager.getIcon('install')}</span>
                     </button>`
                 }
                 ${appCore.isInstalled(app.id) ?

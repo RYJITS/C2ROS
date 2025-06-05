@@ -7,7 +7,7 @@ qui met à jour la sidebar et les pages lors des interactions.
 Depuis la version actuelle, le Store utilise la méthode `toggleApp(appId)` pour
 installer ou désinstaller une application. Un bouton unique affiche l'icône
 `plus` en blanc tant que l'application n'est pas installée, puis une icône de
-poubelle rouge une fois installée.
+poubelle rouge une fois installée. Les boutons placent désormais l'icône à droite du texte.
 L'affichage sombre maintient cette couleur rouge et la taille de ce bouton a
 été réduite pour un meilleur rendu sur mobile.
 
