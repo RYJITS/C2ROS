@@ -1,8 +1,4 @@
-uc0ehg-codex/2025-06-05
 # 📝 C2R OS - Journal des modifications
-=======
-# 📝 C2R OS - Journal des modifications
-main
 
 ## [1.1.0] - 2025-06-06 "DragDrop"
 
@@ -20,37 +16,7 @@ main
 ### 📄 Documentation
 - Ajout des fichiers `docs/*-readme.md` décrivant les modules.
 
-uc0ehg-codex/2025-06-05
 ## [1.0.0] - 2025-05-27 "Genesis"
-=======
-## [1.0.0] - 2025-05-27 "Genesis"
-gomuxy-codex/2025-06-05
-
-# 📝 C2R OS - Journal des modifications
-main
-
-## [1.0.3] - 2025-06-06 "UI"
-
-### ✨ Interface
-- La barre latérale utilise un dégradé de gris avec une ombre portée pour un rendu cohérent en mode sombre et clair.
-
-## [1.0.2] - 2025-06-05 "UX"
-
-### ✨ Améliorations de l'interface
-- Alignement des icônes "installer" et "poubelle" à droite des tuiles du Store pour plus de cohérence.
-
-## [1.0.1] - 2025-06-05 "Docs"
-
-### 📄 Documentation
-- Ajout des fichiers `docs/*-readme.md` décrivant les modules.
-
-uc0ehg-codex/2025-06-05
-## [1.0.0] - 2025-05-27 "Genesis"
-=======
-## [1.0.0] - 2025-05-27 "Genesis"
-=======
-main
-main
 
 ### 🆕 Nouvelles fonctionnalités réelles implémentées
 
@@ -276,30 +242,11 @@ Documentation
 
 ## [1.0.3] - 2025-06-06 "UI"
 
-gomuxy-codex/2025-06-05
-### ✨ Améliorations de la sidebar
-uc0ehg-codex/2025-06-05
-- Le bouton de réduction est désormais intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position.
-- Le logo "C2R" n'est visible qu'en mode étendu de la barre.
-- Le bouton de réduction est désormais intégré à la barre latérale elle-même,
-  placé dans l'en-tête. Sa position s'adapte lorsque la barre passe à droite.
-
-## [1.0.4] - 2025-06-07 "UI"
-
-### ♻️ Navigation mobile simplifiée
-- Suppression du menu hamburger au profit de la barre de navigation basse.
-- Correction de la couleur bleue des icônes de désinstallation sur mobile.
-=======
-- Le bouton de réduction est désormais intégré à la barre latérale et utilise une icône en chevron qui change de sens selon la position.
-- Le logo "C2R" n'est visible qu'en mode étendu de la barre.
-=======
 ### ✨ Améliorations de la sidebar
 - Le bouton de réduction est désormais intégré à la barre latérale elle-même,
   placé dans l'en-tête. L'icône passe d'une croix à un petit carré selon l'état
   de la barre et sa position s'adapte lorsqu'elle est à droite.
-main
 
-0bhix5-codex/2025-06-05
 ## [1.0.4] - 2025-06-07 "UI"
 
 ### ♻️ Navigation mobile simplifiée
@@ -309,10 +256,3 @@ main
 
 ### 🐛 Correctifs
 - Les icônes "installer" et "poubelle" conservent leur design lors de la recherche ou du filtrage dans le Store.
-=======
-## [1.0.4] - 2025-06-07 "UI"
-
-### ♻️ Navigation mobile simplifiée
-- Suppression du menu hamburger au profit de la barre de navigation basse.
-main
-main
