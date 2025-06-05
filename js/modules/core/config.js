@@ -35,11 +35,17 @@ class CoreConfig {
             allowCustomApps: false,
             categories: [
                 "Productivité",
-                "Développement", 
+                "Développement",
                 "Utilitaires",
                 "Multimédia",
                 "Information",
                 "Jeux"
+            ],
+            types: [
+                "application",
+                "information",
+                "service",
+                "formation"
             ]
         };
         

@@ -120,6 +120,14 @@ function setupGlobalEventHandlers() {
             handleStoreSort(e.target.value);
         });
     }
+
+    // Gestionnaire de filtre par type dans le Store
+    const typeFilter = document.getElementById('type-filter');
+    if (typeFilter) {
+        typeFilter.addEventListener('change', (e) => {
+            handleTypeFilter(e.target.value);
+        });
+    }
     
     // Gestionnaires admin
     setupAdminHandlers();
@@ -175,11 +183,31 @@ function handleStoreSort(criteria) {
         case 'category':
             apps.sort((a, b) => a.category.localeCompare(b.category));
             break;
+        case 'type':
+            apps.sort((a, b) => (a.type || '').localeCompare(b.type || ''));
+            break;
         case 'size':
             apps.sort((a, b) => parseFloat(a.size) - parseFloat(b.size));
             break;
     }
     
+    renderFilteredApps(apps);
+}
+
+/**
+ * Filtrer par type dans le Store
+ * @param {string} type - Type sélectionné
+ */
+function handleTypeFilter(type) {
+    const appCore = window.C2R_SYSTEM?.appCore;
+
+    if (!appCore) return;
+
+    let apps = appCore.getAvailableApps();
+    if (type !== 'all') {
+        apps = appCore.getAppsByType(type);
+    }
+
     renderFilteredApps(apps);
 }
 
@@ -204,6 +232,7 @@ function renderFilteredApps(apps) {
             </div>
             <div class="app-meta text-small text-muted">
                 <span>Catégorie: ${app.category}</span>
+                <span>Type: ${app.type || 'application'}</span>
                 <span>Version: ${app.version}</span>
                 <span>Taille: ${app.size}</span>
                 <span>Auteur: ${app.author}</span>
