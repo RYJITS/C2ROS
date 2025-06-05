@@ -33,6 +33,7 @@
         mail: '<i class="ph ph-envelope"></i>',
         phone: '<i class="ph ph-phone"></i>',
         cart: '<i class="ph ph-shopping-cart"></i>',
+        list: '<i class="ph ph-list"></i>',
         play: '<i class="ph ph-play"></i>',
         pause: '<i class="ph ph-pause"></i>',
         checkcircle: '<i class="ph ph-check-circle"></i>',
