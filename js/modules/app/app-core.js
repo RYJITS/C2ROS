@@ -439,7 +439,14 @@ class AppCore {
         }
         
         const user = userCore.getCurrentUser();
-        return user.installedApps.map(appId => this.getApp(appId)).filter(Boolean);
+        const order = (user.appOrder && user.appOrder.length)
+            ? user.appOrder
+            : user.installedApps;
+
+        return order
+            .filter(appId => user.installedApps.includes(appId))
+            .map(appId => this.getApp(appId))
+            .filter(Boolean);
     }
     
     /**
@@ -470,9 +477,22 @@ class AppCore {
         const user = userCore.getCurrentUser();
         user.appOrder = newOrder.filter(appId => user.installedApps.includes(appId));
         user.stats.lastActivity = new Date().toISOString();
-        
+
         userCore.saveUsers();
         userCore.saveCurrentUser();
+
+        if (window.C2R_SYSTEM?.uiCore) {
+            window.C2R_SYSTEM.uiCore.updateSidebarApps();
+        }
+
+        if (window.bottomNav) {
+            window.bottomNav.updateAppsList();
+        }
+
+        if (window.uiMinimalRed) {
+            window.uiMinimalRed.updateSidebarApps();
+            window.uiMinimalRed.updateMobileAppsList();
+        }
     }
     
     /**
