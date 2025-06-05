@@ -233,3 +233,9 @@ C2R_DEBUG.installAllApps()     // Installer toutes les apps
 - Ajout du fichier `docs/icon-workflow.md` pour la gestion Design → Dev des icônes.
 - Migration vers la librairie **Font Awesome** pour toutes les icônes (chargement via CDN).
 *Journal maintenu à jour à chaque modification significative du système*
+
+## [1.0.3] - 2025-06-06 "UI"
+
+### ✨ Améliorations de la sidebar
+- Le bouton de réduction est désormais intégré à la barre latérale elle-même,
+  placé dans l'en-tête. Sa position s'adapte lorsque la barre passe à droite.
