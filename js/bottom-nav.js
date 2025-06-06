@@ -4,6 +4,7 @@ class BottomNav {
         this.dropdown = document.getElementById('mobile-apps-dropdown');
         this.appsBtn = document.getElementById('mobile-apps-btn');
         this.closeBtn = document.getElementById('close-mobile-apps');
+        this.navLinks = document.querySelectorAll('.bottom-nav .nav-link[data-section]');
         this.init();
     }
 
@@ -33,6 +34,17 @@ class BottomNav {
                 }
             });
         }
+
+        this.navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.activateLink(link);
+                this.showSection(link.dataset.section);
+                if (navigator.vibrate) {
+                    navigator.vibrate(10);
+                }
+            });
+        });
     }
 
     toggleMenu() {
@@ -79,6 +91,23 @@ class BottomNav {
             window.C2R_SYSTEM.uiCore.launchApp(appId);
         }
         this.closeMenu();
+    }
+
+    activateLink(link) {
+        this.navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+    }
+
+    showSection(name) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        const target = document.getElementById(`page-${name}`);
+        if (target) target.classList.add('active');
+
+        const logo = document.querySelector('.logo');
+        if (logo) {
+            logo.classList.add('logo-bounce');
+            setTimeout(() => logo.classList.remove('logo-bounce'), 300);
+        }
     }
 }
 
