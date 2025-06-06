@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.6] - 2025-06-12 "ContactForm"
+
+### ✉️ Formulaire de contact
+- La page Contact intègre un formulaire pour envoyer un message directement depuis l'interface.
+
 ## [1.1.5] - 2025-06-11 "PWA"
 
 ### 📱 Support mobile
