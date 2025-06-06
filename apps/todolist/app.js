@@ -332,15 +332,13 @@ function renderTasks() {
             </div>
             
             <div class="task-actions">
-                <button class="task-action-btn edit" onclick="editTask(${task.id})" title="Modifier">
-                    ✏️
-                </button>
-                <button class="task-action-btn delete" onclick="deleteTask(${task.id})" title="Supprimer">
-                    🗑️
-                </button>
+                <button class="task-action-btn edit" onclick="editTask(${task.id})" title="Modifier"><span data-icon="edit"></span></button>
+                <button class="task-action-btn delete" onclick="deleteTask(${task.id})" title="Supprimer"><span data-icon="uninstall"></span></button>
             </div>
         </div>
     `).join('');
+
+    IconManager.inject(container);
 }
 
 /**

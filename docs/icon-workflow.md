@@ -90,3 +90,5 @@ Les fichiers CSS actuels (`css/`) et JS vanilla (`js/`) restent pour l'ancienne 
 ---
 
 Cette procédure assure une cohérence entre Design et Développement lors de l'intégration des icônes de C2R OS.
+
+Depuis la version 1.1.5, des pictogrammes supplémentaires (`table`, `bars`, `code`, `chart`) sont disponibles dans `IconManager` pour les applications internes.

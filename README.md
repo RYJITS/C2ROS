@@ -15,6 +15,7 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
 - En mode sombre, la poubelle reste rouge et la taille des icônes est réduite pour le mobile.
 - Correction: en mode mobile, la poubelle conserve bien sa couleur rouge.
 - En affichage mobile, un bouton **Applications** apparaît dans la barre de navigation basse.
+- La croix du menu mobile adopte la même couleur neutre que les autres boutons.
 - Depuis la version 1.1.0, les applications installées peuvent être réordonnées par glisser-déposer dans la page Profil.
 - Un bouton de déconnexion est disponible dans la page Profil.
 - La barre latérale intègre un bouton de réduction : l'icône passe d'une croix à un petit carré suivant l'état de la barre.
@@ -22,6 +23,7 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
  - Grâce à un manifeste web sans icônes binaires et aux meta tags dédiés, le site peut être installé sur mobile en plein écran.
 - L'application **Formation ChatGPT** propose désormais un cours en dix pages avec navigation pour une prise en main intuitive.
 - La page d'accueil présente des tuiles explicatives pour découvrir le fonctionnement du site.
+- Les applications internes utilisent désormais uniquement les icônes Font Awesome pour un style unifié.
 
 ## Aperçu local
 
