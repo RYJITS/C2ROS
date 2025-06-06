@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.1] - 2025-06-07 "ChatGPT"
+
+### 📚 Formation
+- Ajout de l'application **Formation ChatGPT** avec exemples et quiz intégrés.
+
 ## [1.1.0] - 2025-06-06 "DragDrop"
 
 ### 🚀 Nouvelles fonctionnalités

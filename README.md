@@ -19,6 +19,7 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
 - Un bouton de déconnexion est disponible dans la page Profil.
 - La barre latérale intègre un bouton de réduction : l'icône passe d'une croix à un petit carré suivant l'état de la barre.
 - La barre latérale utilise un dégradé de gris et une ombre portée pour s'intégrer au thème.
+- Nouvelle application **Formation ChatGPT** : apprenez à exploiter ChatGPT grâce à des exemples interactifs et un quiz.
 
 ## Aperçu local
 
