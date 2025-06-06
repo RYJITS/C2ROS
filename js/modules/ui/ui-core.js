@@ -126,9 +126,13 @@ class UICore {
         if (preferences.fontSize) {
             this.setFontSize(preferences.fontSize);
         }
-        
+
         if (preferences.animations !== undefined) {
             this.setAnimations(preferences.animations);
+        }
+
+        if (preferences.confirmDialogs !== undefined) {
+            this.setConfirmDialogs(preferences.confirmDialogs);
         }
     }
     
@@ -178,6 +182,14 @@ class UICore {
             sidebarPositionToggle.addEventListener('change', (e) => {
                 const isRight = e.target.checked;
                 this.setSidebarPosition(isRight ? 'right' : 'left');
+                this.savePreferences();
+            });
+        }
+
+        const confirmDialogsToggle = document.getElementById('confirm-dialogs-toggle');
+        if (confirmDialogsToggle) {
+            confirmDialogsToggle.addEventListener('change', (e) => {
+                this.setConfirmDialogs(e.target.checked);
                 this.savePreferences();
             });
         }
@@ -361,6 +373,7 @@ class UICore {
         const themeToggle = document.getElementById('theme-toggle');
         const welcomeToggle = document.getElementById('welcome-toggle');
         const sidebarToggle = document.getElementById('sidebar-position-toggle');
+        const confirmToggle = document.getElementById('confirm-dialogs-toggle');
         
         if (themeToggle) {
             themeToggle.checked = preferences.theme === 'dark';
@@ -372,6 +385,10 @@ class UICore {
         
         if (sidebarToggle) {
             sidebarToggle.checked = preferences.sidebarPosition === 'right';
+        }
+
+        if (confirmToggle) {
+            confirmToggle.checked = preferences.confirmDialogs !== false;
         }
     }
     
@@ -858,6 +875,14 @@ class UICore {
     setAnimations(enabled) {
         document.body.setAttribute('data-animations', enabled ? 'enabled' : 'disabled');
     }
+
+    /**
+     * Définir l'utilisation des pop-ups de confirmation
+     * @param {boolean} enabled - Activés
+     */
+    setConfirmDialogs(enabled) {
+        this.config.ui.confirmDialogs = enabled;
+    }
     
     /**
      * Basculer la sidebar
@@ -941,7 +966,8 @@ class UICore {
                 sidebarPosition: document.body.classList.contains('sidebar-right') ? 'right' : 'left',
                 showWelcomeMessage: document.getElementById('welcome-toggle')?.checked ?? true,
                 fontSize: document.body.getAttribute('data-font-size') || 'medium',
-                animations: document.body.getAttribute('data-animations') !== 'disabled'
+                animations: document.body.getAttribute('data-animations') !== 'disabled',
+                confirmDialogs: document.getElementById('confirm-dialogs-toggle')?.checked ?? true
             };
             
             userCore.updatePreferences(preferences);

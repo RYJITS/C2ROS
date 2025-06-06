@@ -6,7 +6,7 @@ Les icônes Font Awesome sont chargées via CDN. Le fichier `index.html` référ
 
 - Voir [`docs/icon-workflow.md`](docs/icon-workflow.md) pour le workflow complet des icônes.
 - La documentation de chaque module se trouve dans `docs/*-readme.md`.
-- Les pop-ups de confirmation peuvent être désactivés via `confirmDialogs` dans `js/modules/core/config.js`. Voir [`docs/popup-readme.md`](docs/popup-readme.md) pour la procédure détaillée et les risques.
+- Les pop-ups de confirmation peuvent être désactivés via `confirmDialogs` dans `js/modules/core/config.js` ou depuis le profil utilisateur grâce à une tuile dédiée. Voir [`docs/popup-readme.md`](docs/popup-readme.md) pour la procédure détaillée et les risques.
 
 Le Store propose un bouton unique pour installer ou désinstaller une application. Les icônes restent alignées à droite et conservent leur couleur en mode sombre. Un bouton **Applications** apparaît sur mobile et les applications installées peuvent être réordonnées par glisser-déposer. Le filtre par type (applications, informations, services, formations) permet désormais de trier le catalogue.
 
