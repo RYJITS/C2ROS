@@ -7,6 +7,13 @@
 
 class CoreConfig {
     constructor() {
+        this._initDefaults();
+    }
+
+    /**
+     * Initialiser les valeurs par défaut
+     */
+    _initDefaults() {
         this.version = "1.0.0";
         this.build = "2025-05-27";
         this.codename = "Genesis";
@@ -179,7 +186,7 @@ class CoreConfig {
     reset() {
         localStorage.removeItem(`${this.storage.prefix}config`);
         // Recharger les valeurs par défaut
-        this.__constructor();
+        this._initDefaults();
     }
     
     /**
