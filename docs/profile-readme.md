@@ -11,3 +11,5 @@ mobile se mettent automatiquement à jour pour refléter ce nouvel ordre. Lors d
 déplacement, l'application en cours de glisse est légèrement agrandie et son
 fond s'assombrit pour mieux la distinguer.
 Un bouton de déconnexion est disponible pour terminer la session.
+
+La section Préférences comporte plusieurs interrupteurs dont un pour activer ou non les pop-ups de confirmation. Lorsque l'option est désactivée, la configuration est mémorisée pour les prochaines sessions.
