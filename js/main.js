@@ -1,12 +1,31 @@
 /**
  * C2R OS - Point d'entrée principal
- * Version: 1.0.0
+ * Version: 1.1.6
  * Description: Système d'exploitation dans le navigateur avec architecture modulaire
  */
+
+let deferredPwaPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPwaPrompt = e;
+    const tile = document.getElementById('pwa-install-tile');
+    if (tile) {
+        tile.style.display = 'flex';
+    }
+});
 
 // Initialisation du système C2R OS
 document.addEventListener('DOMContentLoaded', async () => {
     console.log('🚀 Initialisation C2R OS...');
+
+    const tile = document.getElementById('pwa-install-tile');
+    if (tile) {
+        const standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+        if (standalone) {
+            tile.style.display = 'none';
+        }
+    }
     
     try {
         // Vérifier la disponibilité des modules
@@ -145,6 +164,19 @@ function setupGlobalEventHandlers() {
     
     // Configurer les gestionnaires d'authentification
     setupAuthEventListeners();
+
+    const pwaTile = document.getElementById('pwa-install-tile');
+    if (pwaTile) {
+        pwaTile.addEventListener('click', async () => {
+            if (!deferredPwaPrompt) return;
+            deferredPwaPrompt.prompt();
+            const result = await deferredPwaPrompt.userChoice;
+            if (result.outcome === 'accepted') {
+                pwaTile.style.display = 'none';
+            }
+            deferredPwaPrompt = null;
+        });
+    }
 }
 
 /**
