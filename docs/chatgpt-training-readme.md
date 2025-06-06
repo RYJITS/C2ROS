@@ -1,11 +1,17 @@
 # Formation ChatGPT
 
-Cette application propose un mini-cours pour comprendre et exploiter efficacement ChatGPT. Elle inclut des explications, des exemples d'utilisation et un quiz final pour valider vos connaissances.
+Cette application propose un mini-cours pour comprendre et exploiter efficacement ChatGPT. Depuis la version 1.1.4, la formation est découpée en **dix pages** interactives pour guider l'utilisateur pas à pas.
 
 ## Contenu
-- Présentation rapide de ChatGPT et de son fonctionnement
-- Bonnes pratiques pour rédiger des prompts clairs
-- Exemples concrets pour la rédaction, l'analyse et le code
-- Quiz de trois questions avec correction immédiate
+- Introduction générale
+- Comprendre ChatGPT et son fonctionnement
+- Rédiger des prompts clairs
+- Exemples pour la rédaction
+- Exemples pour l'analyse de texte
+- Exemples pour le code
+- Bonnes pratiques et limites
+- Personnalisation des réponses
+- Résumé complet
+- Quiz final de trois questions avec correction immédiate
 
-L'application est classée comme type *formation* dans le Store.
+La navigation « Précédent »/« Suivant » rend le parcours plus intuitif. L'application est classée comme type *formation* dans le Store.
