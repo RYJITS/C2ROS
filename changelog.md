@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.2] - 2025-06-08 "WelcomeTiles"
+
+### ✨ Page d'accueil
+- Ajout de tuiles explicatives présentant le fonctionnement du site.
+
 ## [1.1.1] - 2025-06-07 "ChatGPT"
 
 ### 📚 Formation

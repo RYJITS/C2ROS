@@ -20,6 +20,7 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
 - La barre latérale intègre un bouton de réduction : l'icône passe d'une croix à un petit carré suivant l'état de la barre.
 - La barre latérale utilise un dégradé de gris et une ombre portée pour s'intégrer au thème.
 - Nouvelle application **Formation ChatGPT** : apprenez à exploiter ChatGPT grâce à des exemples interactifs et un quiz.
+- La page d'accueil présente des tuiles explicatives pour découvrir le fonctionnement du site.
 
 ## Aperçu local
 
