@@ -175,7 +175,7 @@ function startRealTimeUpdates() {
  */
 function createNewNote() {
     if (notepadApp.isModified && notepadApp.editor.value.trim()) {
-        if (!confirm('Le document actuel a été modifié. Voulez-vous continuer sans sauvegarder ?')) {
+        if (!c2rConfirm('Le document actuel a été modifié. Voulez-vous continuer sans sauvegarder ?')) {
             return;
         }
     }
@@ -322,7 +322,7 @@ function previewFile(filename) {
  * Supprimer un fichier
  */
 function deleteFile(filename) {
-    if (confirm(`Êtes-vous sûr de vouloir supprimer "${filename}" ?`)) {
+    if (c2rConfirm(`Êtes-vous sûr de vouloir supprimer "${filename}" ?`)) {
         notepadApp.files = notepadApp.files.filter(f => f.name !== filename);
         saveFilesToStorage();
         renderFileList();
@@ -343,7 +343,7 @@ function confirmFileAction() {
     const file = notepadApp.files.find(f => f.name === filename);
     if (file) {
         // Charger le fichier
-        if (notepadApp.isModified && !confirm('Le document actuel a été modifié. Continuer ?')) {
+        if (notepadApp.isModified && !c2rConfirm('Le document actuel a été modifié. Continuer ?')) {
             return;
         }
         

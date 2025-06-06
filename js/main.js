@@ -293,7 +293,7 @@ window.handleAppUninstall = function(appId) {
     const app = appCore.getApp(appId);
     if (!app) return;
     
-    if (confirm(`Êtes-vous sûr de vouloir désinstaller ${app.name} ?`)) {
+    if (c2rConfirm(`Êtes-vous sûr de vouloir désinstaller ${app.name} ?`)) {
         if (appCore.uninstallApp(appId)) {
             uiCore.showNotification(`${IconManager.getIcon('uninstall')} ${app.name} désinstallée`, 'info');
             uiCore.refreshApplicationsList();
@@ -335,8 +335,8 @@ function handleSystemReset() {
         return;
     }
     
-    if (confirm('⚠️ Cette action va réinitialiser complètement le système. Continuer ?')) {
-        if (confirm('🚨 ATTENTION: Toutes les données seront perdues. Êtes-vous absolument certain ?')) {
+    if (c2rConfirm('⚠️ Cette action va réinitialiser complètement le système. Continuer ?')) {
+        if (c2rConfirm('🚨 ATTENTION: Toutes les données seront perdues. Êtes-vous absolument certain ?')) {
             uiCore?.showNotification(`${IconManager.getIcon('refresh')} Réinitialisation du système en cours...`, 'warning');
             
             setTimeout(() => {
@@ -753,7 +753,7 @@ function handleLogout() {
     
     if (!userCore || !uiCore) return;
     
-    if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
+    if (c2rConfirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
         userCore.logout();
         uiCore.showNotification(`${IconManager.getIcon('signout')} Déconnexion réussie`, 'info');
         

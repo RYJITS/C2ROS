@@ -457,7 +457,7 @@ class UICore {
             
             if (user) {
                 const newRole = user.role === 'admin' ? 'user' : 'admin';
-                if (confirm(`Changer le rôle de ${user.email} vers ${newRole} ?`)) {
+                if (c2rConfirm(`Changer le rôle de ${user.email} vers ${newRole} ?`)) {
                     user.role = newRole;
                     userCore.saveUsers();
                     this.refreshAdminPanel();
@@ -482,7 +482,7 @@ class UICore {
             const users = userCore.getAllUsers();
             const user = users.find(u => u.id === userId);
             
-            if (user && confirm(`Êtes-vous sûr de vouloir supprimer l'utilisateur ${user.email} ?`)) {
+            if (user && c2rConfirm(`Êtes-vous sûr de vouloir supprimer l'utilisateur ${user.email} ?`)) {
                 if (userCore.deleteUser(userId)) {
                     this.refreshAdminPanel();
                     this.showNotification(`Utilisateur ${user.email} supprimé`, 'warning');
@@ -537,7 +537,7 @@ class UICore {
      * Gérer la déconnexion
      */
     handleLogout() {
-        if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
+        if (c2rConfirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
             const userCore = window.C2R_SYSTEM?.userCore;
             if (userCore) {
                 userCore.logout();
