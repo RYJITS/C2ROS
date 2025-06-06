@@ -1,5 +1,54 @@
 # 📝 C2R OS - Journal des modifications
 
+pdin0i-codex/2025-06-06
+## [1.1.6] - 2025-06-11 "PWAfix"
+
+### 🗑️ Nettoyage
+- Suppression des icônes binaires du manifeste mobile pour alléger le dépôt.
+- Le manifeste reste présent pour permettre un affichage plein écran sur mobile.
+
+## [1.1.5] - 2025-06-11 "PWA"
+
+### 📱 Support mobile
+- Ajout d'un fichier `manifest.json` et des meta tags pour installer l'OS sur mobile.
+- Une fois installé, la barre du navigateur se masque pour un affichage plein écran.
+=======
+## [1.1.5] - 2025-06-11 "UI Icons"
+
+### ✨ Harmonisation des icônes
+- Les applications utilisent désormais les pictogrammes Font Awesome au lieu des emojis.
+- Mise à jour du gestionnaire d'icônes avec de nouveaux glyphes (table, bars, code, chart).
+main
+
+## [1.1.4] - 2025-06-10 "TrainingUI"
+
+### 📚 Formation
+- La formation ChatGPT est désormais découpée en dix pages avec navigation intuitive.
+
+## [1.1.3] - 2025-06-09 "Tests"
+
+### ✅ Configuration Jest
+- Ajout du fichier `jest.config.cjs` pour centraliser la configuration des tests.
+- Mise à jour de `package.json` et de la documentation pour expliquer l'installation des dépendances avant l'exécution des tests.
+
+
+## [1.1.2] - 2025-06-08 "WelcomeTiles"
+
+### ✨ Page d'accueil
+- Ajout de tuiles explicatives présentant le fonctionnement du site.
+
+## [1.1.1] - 2025-06-07 "ChatGPT"
+
+### 📚 Formation
+- Ajout de l'application **Formation ChatGPT** avec exemples et quiz intégrés.
+
+## [1.1.2] - 2025-06-07 "Contact"
+
+### 📭 Support utilisateur
+- Nouvelle page **Contact** accessible depuis la barre latérale et la navigation
+  mobile, regroupant l'adresse e-mail `support@c2ros.local` et le numéro de
+  téléphone.
+
 ## [1.1.0] - 2025-06-06 "DragDrop"
 
 ### 🚀 Nouvelles fonctionnalités
@@ -257,3 +306,8 @@ Documentation
 
 ### 🐛 Correctifs
 - Les icônes "installer" et "poubelle" conservent leur design lors de la recherche ou du filtrage dans le Store.
+
+## [1.0.6] - 2025-06-09 "Fix"
+
+### 🐛 Correctifs
+- La poubelle du Store et la croix de fermeture du menu mobile s'affichent désormais avec une couleur neutre.

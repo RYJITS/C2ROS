@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#181818">
+    <link rel="manifest" href="manifest.json">
     <title>C2R OS - Système Modulaire</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
@@ -45,6 +49,12 @@
                 <a href="#profile" class="nav-link" data-page="profile" aria-label="Profil utilisateur">
                     <span class="nav-icon" data-icon="profile"></span>
                     <span class="nav-text">Profil</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link" data-page="contact" aria-label="Contact">
+                    <span class="nav-icon" data-icon="mail"></span>
+                    <span class="nav-text">Contact</span>
                 </a>
             </li>
             <li class="nav-item admin-only" style="display: none;">
@@ -94,7 +104,25 @@
                             Accéder au Store
                         </button>
                     </div>
-                    
+
+                    <div class="info-tiles">
+                        <div class="card info-tile">
+                            <span data-icon="store"></span>
+                            <h3>Installez des applications</h3>
+                            <p>Parcourez le Store pour ajouter de nouvelles fonctionnalités.</p>
+                        </div>
+                        <div class="card info-tile">
+                            <span data-icon="profile"></span>
+                            <h3>Personnalisez votre profil</h3>
+                            <p>Modifiez vos préférences et gérez vos applications installées.</p>
+                        </div>
+                        <div class="card info-tile">
+                            <span data-icon="admin"></span>
+                            <h3>Configurez le système</h3>
+                            <p>Accédez aux options avancées si vous disposez des droits.</p>
+                        </div>
+                    </div>
+
                     <div id="daily-tip" class="daily-tip">
                         <h3><span data-icon="idea"></span> Conseil du jour</h3>
                         <p>Explorez les nouvelles applications disponibles dans le Store pour enrichir votre expérience.</p>
@@ -275,6 +303,19 @@
                 </details>
             </div>
         </section>
+        <!-- Page Contact -->
+        <section id="page-contact" class="page">
+            <div class="page-header">
+                <h1>Contact</h1>
+            </div>
+
+            <div class="contact-content">
+                <p>Pour toute question, écrivez-nous à
+                    <a href="mailto:support@c2ros.local">support@c2ros.local</a>
+                    ou appelez le <a href="tel:+33123456789">01 23 45 67 89</a>.
+                </p>
+            </div>
+        </section>
     </main>
 
     <!-- Barre de navigation mobile -->
@@ -287,6 +328,9 @@
         </a>
         <a href="#profile" class="nav-link" data-page="profile" aria-label="Profil">
             <span class="nav-icon" data-icon="profile"></span>
+        </a>
+        <a href="#contact" class="nav-link" data-page="contact" aria-label="Contact">
+            <span class="nav-icon" data-icon="mail"></span>
         </a>
         <button class="nav-link" id="mobile-apps-btn" aria-label="Applications">
             <span class="nav-icon" data-icon="list"></span>

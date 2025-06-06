@@ -5,3 +5,5 @@ Charge les applications intégrées et gère leur installation ou suppression. L
 Le module est utilisé par `UICore.toggleApp()` pour installer ou désinstaller les applications depuis le Store.
 
 Depuis la version 1.1.0, chaque application possède un type (application, information, service ou formation) afin de faciliter le filtrage dans le Store.
+
+La formation **ChatGPT** fait partie des applications intégrées. Elle présente désormais un cours en dix pages avec quiz final pour apprendre à rédiger de bons prompts.

@@ -147,6 +147,21 @@ class AppCore {
                 tags: ['temps', 'minuteur', 'chronomètre'],
                 builtin: true,
                 path: './apps/timer/'
+            },
+            {
+                id: 'chatgpt-training',
+                name: 'Formation ChatGPT',
+                description: 'Apprenez à utiliser ChatGPT avec exemples et quiz',
+                icon: IconManager.getIcon('robot'),
+                category: 'Formation',
+                type: 'formation',
+                version: '1.0.0',
+                author: 'C2R Team',
+                size: '55 KB',
+                permissions: [],
+                tags: ['chatgpt', 'formation', 'ia'],
+                builtin: true,
+                path: './apps/chatgpt-training/'
             }
         ];
         

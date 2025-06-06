@@ -286,11 +286,13 @@ function renderFileList() {
                 <div class="file-date">${new Date(file.lastModified).toLocaleString('fr-FR')} • ${file.size} caractères</div>
             </div>
             <div class="file-actions">
-                <button class="file-action-btn" onclick="event.stopPropagation(); previewFile('${file.name}')" title="Aperçu">👁️</button>
-                <button class="file-action-btn delete" onclick="event.stopPropagation(); deleteFile('${file.name}')" title="Supprimer">🗑️</button>
+                <button class="file-action-btn" onclick="event.stopPropagation(); previewFile('${file.name}')" title="Aperçu"><span data-icon="preview"></span></button>
+                <button class="file-action-btn delete" onclick="event.stopPropagation(); deleteFile('${file.name}')" title="Supprimer"><span data-icon="uninstall"></span></button>
             </div>
         </div>
     `).join('');
+
+    IconManager.inject(fileList);
 }
 
 /**
