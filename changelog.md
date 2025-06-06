@@ -279,3 +279,8 @@ Documentation
 
 ### 🐛 Correctifs
 - Les icônes "installer" et "poubelle" conservent leur design lors de la recherche ou du filtrage dans le Store.
+
+## [1.0.6] - 2025-06-09 "Fix"
+
+### 🐛 Correctifs
+- La poubelle du Store et la croix de fermeture du menu mobile n'apparaissent plus en bleu.
