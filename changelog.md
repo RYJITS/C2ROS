@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.4] - 2025-06-10 "TrainingUI"
+
+### 📚 Formation
+- La formation ChatGPT est désormais découpée en dix pages avec navigation intuitive.
+
 ## [1.1.3] - 2025-06-09 "Tests"
 
 ### ✅ Configuration Jest
