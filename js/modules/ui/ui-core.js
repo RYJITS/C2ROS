@@ -106,6 +106,7 @@ class UICore {
             
             if (preferences) {
                 this.applyPreferences(preferences);
+                this.config.save();
             }
         }
     }
@@ -885,6 +886,7 @@ class UICore {
      */
     setConfirmDialogs(enabled) {
         this.config.ui.confirmDialogs = enabled;
+        this.config.save();
     }
     
     /**

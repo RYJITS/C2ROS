@@ -13,7 +13,7 @@ Certaines installations souhaitent supprimer ces dialogues afin d'accélérer le
 ### Désactivation via la configuration
 
 Dans `js/modules/core/config.js`, passez `confirmDialogs` à `false` dans la section `ui` ou utilisez la tuile "Pop-ups de confirmation" du profil utilisateur.
-Toutes les fonctions de confirmation utilisent désormais `c2rConfirm()`, qui respecte ce paramètre.
+Toutes les fonctions de confirmation utilisent désormais `c2rConfirm()`, qui respecte ce paramètre. La désactivation est enregistrée pour la session et rechargée automatiquement au démarrage suivant.
 
 ### Suppression manuelle
 
