@@ -22,6 +22,7 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
 - La barre latérale utilise un dégradé de gris et une ombre portée pour s'intégrer au thème.
 - L'application **Formation ChatGPT** propose désormais un cours en dix pages avec navigation pour une prise en main intuitive.
 - La page d'accueil présente des tuiles explicatives pour découvrir le fonctionnement du site.
+- Les applications internes utilisent désormais uniquement les icônes Font Awesome pour un style unifié.
 
 ## Aperçu local
 

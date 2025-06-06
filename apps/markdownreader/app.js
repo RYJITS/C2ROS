@@ -192,11 +192,13 @@ function toggleView() {
     
     if (markdownState.isPreviewOnly) {
         app.classList.add('preview-only');
-        toggleBtn.textContent = '✏️ Édition';
+        toggleBtn.innerHTML = '<span data-icon="edit"></span> Édition';
+        IconManager.inject(toggleBtn);
         markdownState.viewMode = 'preview';
     } else {
         app.classList.remove('preview-only');
-        toggleBtn.textContent = '👁️ Aperçu';
+        toggleBtn.innerHTML = '<span data-icon="preview"></span> Aperçu';
+        IconManager.inject(toggleBtn);
         markdownState.viewMode = 'split';
     }
     

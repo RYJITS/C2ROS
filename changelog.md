@@ -1,5 +1,11 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.5] - 2025-06-11 "UI Icons"
+
+### ✨ Harmonisation des icônes
+- Les applications utilisent désormais les pictogrammes Font Awesome au lieu des emojis.
+- Mise à jour du gestionnaire d'icônes avec de nouveaux glyphes (table, bars, code, chart).
+
 ## [1.1.4] - 2025-06-10 "TrainingUI"
 
 ### 📚 Formation

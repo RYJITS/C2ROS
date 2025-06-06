@@ -252,14 +252,15 @@ function updateSavedPromptsList() {
             <div class="prompt-item">
                 <div class="prompt-preview" title="${prompt.prompt}">${preview}</div>
                 <div class="prompt-item-actions">
-                    <button class="prompt-item-btn load" onclick="loadSavedPrompt(${prompt.id})">Charger</button>
-                    <button class="prompt-item-btn delete" onclick="deleteSavedPrompt(${prompt.id})">Suppr.</button>
+                    <button class="prompt-item-btn load" onclick="loadSavedPrompt(${prompt.id})"><span data-icon="open"></span></button>
+                    <button class="prompt-item-btn delete" onclick="deleteSavedPrompt(${prompt.id})"><span data-icon="uninstall"></span></button>
                 </div>
             </div>
         `;
     });
-    
+
     promptsList.innerHTML = promptsHTML;
+    IconManager.inject(promptsList);
 }
 
 // Sauvegarder les prompts dans le localStorage
