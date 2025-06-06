@@ -2,7 +2,7 @@
   "name": "c2ros",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest --config jest.config.cjs"
   },
   "devDependencies": {
     "jest": "^29.7.0",
