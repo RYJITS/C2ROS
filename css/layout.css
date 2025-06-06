@@ -227,6 +227,31 @@ body.sidebar-right .sidebar {
     margin-bottom: var(--c2r-spacing-xl);
 }
 
+.info-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--c2r-spacing-lg);
+    margin-bottom: var(--c2r-spacing-xl);
+}
+
+.info-tile {
+    text-align: center;
+}
+
+.info-tile span[data-icon] {
+    font-size: var(--font-size-xl);
+    color: var(--c2r-primary);
+}
+
+.info-tile h3 {
+    margin: var(--c2r-spacing-md) 0;
+}
+
+.info-tile p {
+    margin: 0;
+    color: var(--c2r-text-secondary);
+}
+
 .daily-tip {
     background-color: var(--c2r-bg-secondary);
     border: 1px solid var(--c2r-border);
@@ -582,6 +607,10 @@ body.sidebar-right .sidebar {
     .apps-grid {
         grid-template-columns: 1fr;
     }
+
+    .info-tiles {
+        grid-template-columns: 1fr;
+    }
     
     .profile-content {
         grid-template-columns: 1fr;
@@ -618,5 +647,9 @@ body.sidebar-right .sidebar {
     .preferences,
     .admin-section {
         padding: var(--c2r-spacing-md);
+    }
+
+    .info-tiles {
+        grid-template-columns: 1fr;
     }
 }
