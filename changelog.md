@@ -1,5 +1,11 @@
 # 📝 C2R OS - Journal des modifications
 
+09kjmh-codex/2025-06-06
+## [1.1.6] - 2025-06-12 "ContactForm"
+
+### ✉️ Formulaire de contact
+- La page Contact intègre un formulaire pour envoyer un message directement depuis l'interface.
+=======
 4uf1po-codex/2025-06-06
 ## [1.1.6] - 2025-06-12 "UI"
 
@@ -16,6 +22,7 @@ tzctt3-codex/2025-06-06
 
 ### 🎨 Ajustements visuels
 - Icônes du menu d'applications mobile réduites et teintées en couleur secondaire pour un style plus sobre.
+main
 main
 main
 

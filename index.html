@@ -321,6 +321,21 @@
                     <a href="mailto:support@c2ros.local">support@c2ros.local</a>
                     ou appelez le <a href="tel:+33123456789">01 23 45 67 89</a>.
                 </p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Nom</label>
+                        <input type="text" id="contact-name" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" required placeholder="Votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" required placeholder="Votre message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
             </div>
         </section>
     </main>
@@ -439,6 +454,7 @@
     <script src="js/mobile-fix.js"></script>
     <script src="js/sidebar-minimal.js"></script>
     <script src="js/bottom-nav.js"></script>
+    <script src="js/contact-form.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             IconManager.inject();
