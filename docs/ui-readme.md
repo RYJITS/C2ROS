@@ -14,3 +14,4 @@ La sidebar propose un mode compact activé par un bouton dans son en-tête. L'ic
 La barre latérale bénéficie d'un fond dégradé gris et d'une ombre pour s'intégrer harmonieusement aux thèmes sombre et clair. Le bouton hamburger a été supprimé au profit de cette barre de navigation basse.
 Une page **Contact** est disponible pour accéder rapidement aux informations de support.
 Depuis la version 1.1.5, un fichier `manifest.json` avec des icônes encodées en base64 et des meta tags permet d'installer C2R OS sur mobile en plein écran.
+Depuis la version 1.1.6, la barre de navigation mobile atteint 72 px de haut pour faciliter l’utilisation tactile.

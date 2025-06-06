@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.6] - 2025-06-12 "UI"
+
+### 📱 Barre de navigation mobile
+- Agrandissement de la barre inférieure à 72 px pour une meilleure accessibilité tactile.
+
 ## [1.1.5] - 2025-06-11 "PWA"
 
 ### 📱 Support mobile
