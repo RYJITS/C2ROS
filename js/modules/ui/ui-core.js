@@ -240,6 +240,9 @@ class UICore {
             case 'admin':
                 this.refreshAdminPanel();
                 break;
+            case 'contact':
+                // Pas d'action spécifique pour le moment
+                break;
             case 'home':
                 this.refreshHomePage();
                 break;

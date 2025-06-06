@@ -1,6 +1,11 @@
 {
+gud95h-codex/2025-06-06
+  "version": "1.1.2",
+  "build": "2025-05-27",
+=======
   "version": "1.1.6",
   "build": "2025-06-11",
+main
   "codename": "Genesis",
   "description": "Premier déploiement du système C2R OS",
   "core_modules": [

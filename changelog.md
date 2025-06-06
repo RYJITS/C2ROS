@@ -42,6 +42,13 @@ main
 ### 📚 Formation
 - Ajout de l'application **Formation ChatGPT** avec exemples et quiz intégrés.
 
+## [1.1.2] - 2025-06-07 "Contact"
+
+### 📭 Support utilisateur
+- Nouvelle page **Contact** accessible depuis la barre latérale et la navigation
+  mobile, regroupant l'adresse e-mail `support@c2ros.local` et le numéro de
+  téléphone.
+
 ## [1.1.0] - 2025-06-06 "DragDrop"
 
 ### 🚀 Nouvelles fonctionnalités
