@@ -1,5 +1,12 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.3] - 2025-06-09 "Tests"
+
+### ✅ Configuration Jest
+- Ajout du fichier `jest.config.cjs` pour centraliser la configuration des tests.
+- Mise à jour de `package.json` et de la documentation pour expliquer l'installation des dépendances avant l'exécution des tests.
+
+
 ## [1.1.2] - 2025-06-08 "WelcomeTiles"
 
 ### ✨ Page d'accueil

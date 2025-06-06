@@ -33,4 +33,14 @@ Veillez à disposer de Python 3.
 
 ## Tests
 
-Pour exécuter les tests, lancez `npm test`.
+Avant de lancer les tests, installez les dépendances :
+
+```bash
+npm install
+```
+
+Vous pouvez ensuite exécuter les tests avec :
+
+```bash
+npm test
+```
