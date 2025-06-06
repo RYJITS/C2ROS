@@ -5,7 +5,7 @@ S'occupe du thème, de la navigation et des notifications. Il adapte l'interface
 Depuis la version actuelle, le Store utilise la méthode `toggleApp(appId)` pour installer ou désinstaller une application. L'icône « plus » devient une poubelle rouge, alignée à droite du texte. L'affichage sombre conserve cette couleur et la taille des icônes est réduite pour un meilleur rendu mobile. Une correction assure également que la poubelle reste rouge sur mobile.
 La petite croix fermant la liste déroulante des applications sur mobile adopte elle aussi une teinte neutre.
 
-La barre de navigation basse a été entièrement revue pour s'approcher d'une véritable application mobile. Elle s'affiche en noir plein écran sous 768 px, avec des icônes blanches. L'icône active passe en rouge `#ff1f1f` et le bouton central **Profil** est mis en valeur par un cercle blanc. Un appui déclenche une petite vibration si le navigateur le permet. Le bouton **Applications** utilise désormais le pictogramme `fa-robot`.
+La barre de navigation basse a été entièrement revue pour s'approcher d'une véritable application mobile. Elle s'affiche en noir plein écran sous 768 px, avec des icônes blanches. L'icône active passe en rouge `#ff1f1f` et le bouton central **Profil** est mis en valeur par un cercle blanc. Un appui déclenche une petite vibration si le navigateur le permet. Le bouton **Applications** utilise désormais le pictogramme `fa-robot`. Les liens de cette barre portent aussi l'attribut `data-page` pour rester fonctionnels sur mobile.
 
 La page Profil permet de réordonner visuellement les applications installées grâce à SortableJS. Un bouton de déconnexion est également présent sur cette page.
 

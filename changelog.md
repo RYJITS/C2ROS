@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.7] - 2025-06-11 "NavFix"
+
+### ✅ Correctifs mobiles
+- Les liens de la barre de navigation basse possèdent maintenant l'attribut `data-page` pour fonctionner correctement sur petit écran.
+
 ## [1.1.6] - 2025-06-11 "PWAfix"
 
 ### 🗑️ Nettoyage
