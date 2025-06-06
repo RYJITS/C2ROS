@@ -63,6 +63,11 @@
     color: var(--error-color) !important;
 }
 
+/* Correction couleur poubelle sur mobile et desktop */
+.app-toggle-btn .fa-trash {
+    color: var(--error-color) !important;
+}
+
 /* Poubelle rouge en mode sidebar minimaliste */
 .minimal-sidebar .app-toggle-btn.installed .icon {
     color: var(--error-color) !important;

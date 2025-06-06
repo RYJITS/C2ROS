@@ -13,6 +13,7 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
 - Le Store propose un bouton unique pour installer ou désinstaller une application : l'icône « plus » devient une poubelle rouge.
 - Les icônes d'installation sont alignées à droite des tuiles pour plus de clarté.
 - En mode sombre, la poubelle reste rouge et la taille des icônes est réduite pour le mobile.
+- Correction: en mode mobile, la poubelle conserve bien sa couleur rouge.
 - En affichage mobile, un bouton **Applications** apparaît dans la barre de navigation basse.
 - Depuis la version 1.1.0, les applications installées peuvent être réordonnées par glisser-déposer dans la page Profil.
 - Un bouton de déconnexion est disponible dans la page Profil.
