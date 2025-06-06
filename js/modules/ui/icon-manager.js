@@ -48,6 +48,10 @@
         'map-pin': '<i class="icon fa-solid fa-map-pin"></i>',
         close: '<i class="icon fa-solid fa-xmark"></i>',
         square: '<i class="icon fa-solid fa-square"></i>',
+        table: '<i class="icon fa-solid fa-table"></i>',
+        bars: '<i class="icon fa-solid fa-bars"></i>',
+        code: '<i class="icon fa-solid fa-code"></i>',
+        chart: '<i class="icon fa-solid fa-chart-line"></i>',
         'chevron-left': '<i class="icon fa-solid fa-chevron-left"></i>',
         'chevron-right': '<i class="icon fa-solid fa-chevron-right"></i>'
     };

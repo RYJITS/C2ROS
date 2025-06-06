@@ -54,9 +54,9 @@
             Votre prompt apparaîtra ici...
         </div>
         <div class="prompt-actions">
-            <button onclick="copyPrompt()" class="btn-copy">📋 Copier</button>
-            <button onclick="savePrompt()" class="btn-save">💾 Sauvegarder</button>
-            <button onclick="clearPrompt()" class="btn-clear">🗑️ Effacer</button>
+            <button onclick="copyPrompt()" class="btn-copy btn btn-secondary"><span data-icon="clipboard"></span> Copier</button>
+            <button onclick="savePrompt()" class="btn-save btn btn-primary"><span data-icon="save"></span> Sauvegarder</button>
+            <button onclick="clearPrompt()" class="btn-clear btn btn-danger"><span data-icon="uninstall"></span> Effacer</button>
         </div>
     </div>
     
@@ -70,10 +70,10 @@
     <div class="prompt-templates">
         <h3>Templates prédéfinis</h3>
         <div class="templates-grid">
-            <button onclick="loadTemplate('writing')" class="template-btn">✍️ Rédaction</button>
-            <button onclick="loadTemplate('coding')" class="template-btn">💻 Programmation</button>
-            <button onclick="loadTemplate('analysis')" class="template-btn">📊 Analyse</button>
-            <button onclick="loadTemplate('brainstorm')" class="template-btn">💡 Brainstorming</button>
+            <button onclick="loadTemplate('writing')" class="template-btn"><span data-icon="edit"></span> Rédaction</button>
+            <button onclick="loadTemplate('coding')" class="template-btn"><span data-icon="code"></span> Programmation</button>
+            <button onclick="loadTemplate('analysis')" class="template-btn"><span data-icon="chart"></span> Analyse</button>
+            <button onclick="loadTemplate('brainstorm')" class="template-btn"><span data-icon="idea"></span> Brainstorming</button>
         </div>
     </div>
 </div>
