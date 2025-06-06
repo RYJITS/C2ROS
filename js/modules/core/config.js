@@ -63,7 +63,8 @@ class CoreConfig {
             animationDuration: 300,
             notificationTimeout: 3000,
             responsiveBreakpoint: 768,
-            maxNotifications: 5
+            maxNotifications: 5,
+            confirmDialogs: true
         };
         
         // Stockage local
@@ -209,3 +210,12 @@ window.CoreConfig = CoreConfig;
 
 // Instance globale
 window.C2R_CONFIG = new CoreConfig();
+
+// Fonction de confirmation centralisee
+window.c2rConfirm = function(message) {
+    const cfg = window.C2R_CONFIG?.ui;
+    if (cfg && cfg.confirmDialogs === false) {
+        return true;
+    }
+    return confirm(message);
+};

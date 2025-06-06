@@ -196,7 +196,7 @@ function deleteTask(taskId) {
     const task = todoApp.tasks.find(t => t.id === taskId);
     if (!task) return;
     
-    if (confirm(`Êtes-vous sûr de vouloir supprimer "${task.text}" ?`)) {
+    if (c2rConfirm(`Êtes-vous sûr de vouloir supprimer "${task.text}" ?`)) {
         todoApp.tasks = todoApp.tasks.filter(t => t.id !== taskId);
         
         saveTasksToStorage();
@@ -254,7 +254,7 @@ function clearCompletedTasks() {
         return;
     }
     
-    if (confirm(`Supprimer ${completedCount} tâche(s) terminée(s) ?`)) {
+    if (c2rConfirm(`Supprimer ${completedCount} tâche(s) terminée(s) ?`)) {
         todoApp.tasks = todoApp.tasks.filter(t => !t.completed);
         
         saveTasksToStorage();
