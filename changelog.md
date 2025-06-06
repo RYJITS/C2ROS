@@ -1,6 +1,5 @@
 # 📝 C2R OS - Journal des modifications
 
-pdin0i-codex/2025-06-06
 ## [1.1.6] - 2025-06-11 "PWAfix"
 
 ### 🗑️ Nettoyage
