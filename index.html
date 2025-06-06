@@ -2,11 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#181818">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
     <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAAB6klEQVR4nO3SQQ3AIADAQMAI/lWCh/VBltwp6KPz7D3gq/U6gH8zEImBSAxEYiASA5EYiMRAJAYiMRCJgUgMRGIgEgORGIjEQCQGIjEQiYFIDERiIBIDkRiIxEAkBiIxEImBSAxEYiASA5EYiMRAJAYiMRCJgUgMRGIgEgORGIjEQCQGIjEQiYFIDERiIBIDkRiIxEAkBiIxEImBSAxEYiASA5EYiMRAJAYiMRCJgUgMRGIgEgORGIjEQCQGIjEQiYFIDERiIBIDkRiIxEAkBiIxEImBSAxEYiASA5EYiMRAJAYiMRCJgUgMRGIgEgORGIjEQCQGIjEQiYFIDERiIBIDkRiIxEAkBiIxEImBSAxEYiASA5EYiMRAJAYiMRCJgUgMRGIgEgORGIjEQCQGIjEQiYFIDERiIBIDkRiIxEAkBiIxEImBSAxEYiASA5EYiMRAJAYiMRCJgUgMRGIgEgORGIjEQCQGIjEQiYFIDERiIBIDkRiIxEAkBiIxEImBSAxEYiASA5EYiMRAJAYiMRCJgUgMRGIgEgORGIjEQCQGIjEQiYFIDERiIBIDkRiIxEAkBiIxEImBSAxEYiASA5EYiMRAJAYiMRCJgUgMRGIgEgORGIjEQCQGIjEQiYFIDERiIBIDkRiI5AJPaAK9dxQTbQAAAABJRU5ErkJggg==">
     <title>C2R OS - Système Modulaire</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
@@ -319,22 +321,22 @@
     </main>
 
     <!-- Barre de navigation mobile -->
-    <nav class="bottom-nav mobile-only">
-        <a href="#home" class="nav-link" data-page="home" aria-label="Accueil">
-            <span class="nav-icon" data-icon="home"></span>
+    <nav class="bottom-nav mobile-only" id="bottomNav">
+        <a href="#home" class="nav-link active" data-section="home" aria-label="Accueil">
+            <i class="fa-solid fa-home"></i>
         </a>
-        <a href="#store" class="nav-link" data-page="store" aria-label="Store">
-            <span class="nav-icon" data-icon="store"></span>
+        <a href="#store" class="nav-link" data-section="store" aria-label="Store">
+            <i class="fa-solid fa-store"></i>
         </a>
-        <a href="#profile" class="nav-link" data-page="profile" aria-label="Profil">
-            <span class="nav-icon" data-icon="profile"></span>
-        </a>
-        <a href="#contact" class="nav-link" data-page="contact" aria-label="Contact">
-            <span class="nav-icon" data-icon="mail"></span>
+        <a href="#profile" class="nav-link profile-link" data-section="profile" aria-label="Profil">
+            <i class="fa-solid fa-user"></i>
         </a>
         <button class="nav-link" id="mobile-apps-btn" aria-label="Applications">
-            <span class="nav-icon" data-icon="list"></span>
+            <i class="fa-solid fa-robot"></i>
         </button>
+        <a href="#contact" class="nav-link" data-section="contact" aria-label="Contact">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
     </nav>
 
     <div class="mobile-apps-dropdown" id="mobile-apps-dropdown">

@@ -24,7 +24,8 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
 - La barre latérale utilise un dégradé de gris et une ombre portée pour s'intégrer au thème.
 - Nouvelle application **Formation ChatGPT** : apprenez à exploiter ChatGPT grâce à des exemples interactifs et un quiz.
 - Une page **Contact** fait son apparition pour joindre l'équipe de développement par mail ou téléphone.
-- Grâce à un manifeste web sans icônes binaires et aux meta tags dédiés, le site peut être installé sur mobile en plein écran.
+- Grâce à un manifeste web utilisant des icônes encodées en base64 et aux meta tags dédiés, le site peut être installé sur mobile en plein écran.
+- La barre de navigation basse adopte désormais un style proche d'une application mobile : fond noir, icônes blanches et rouge actif. Le bouton central Profil est mis en avant par un cercle blanc.
 - L'application **Formation ChatGPT** propose désormais un cours en dix pages avec navigation pour une prise en main intuitive.
 - La page d'accueil présente des tuiles explicatives pour découvrir le fonctionnement du site.
 - Les applications internes utilisent désormais uniquement les icônes Font Awesome pour un style unifié.

@@ -52,6 +52,16 @@ body.sidebar-right .sidebar {
     margin: 0;
 }
 
+@keyframes logo-bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.logo-bounce {
+    animation: logo-bounce 0.3s ease;
+}
+
 .sidebar-toggle {
     display: none;
     background: none;
