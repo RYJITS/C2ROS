@@ -64,7 +64,8 @@ class CoreConfig {
             notificationTimeout: 3000,
             responsiveBreakpoint: 768,
             maxNotifications: 5,
-            confirmDialogs: true
+            confirmDialogs: true,
+            fullscreen: false
         };
         
         // Stockage local

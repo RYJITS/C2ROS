@@ -135,6 +135,10 @@ class UICore {
         if (preferences.confirmDialogs !== undefined) {
             this.setConfirmDialogs(preferences.confirmDialogs);
         }
+
+        if (preferences.fullscreen !== undefined) {
+            this.setFullscreen(preferences.fullscreen);
+        }
     }
     
     /**
@@ -191,6 +195,14 @@ class UICore {
         if (confirmDialogsToggle) {
             confirmDialogsToggle.addEventListener('change', (e) => {
                 this.setConfirmDialogs(e.target.checked);
+                this.savePreferences();
+            });
+        }
+
+        const addressBarToggle = document.getElementById('address-bar-toggle');
+        if (addressBarToggle) {
+            addressBarToggle.addEventListener('change', (e) => {
+                this.setFullscreen(e.target.checked);
                 this.savePreferences();
             });
         }
@@ -378,6 +390,7 @@ class UICore {
         const welcomeToggle = document.getElementById('welcome-toggle');
         const sidebarToggle = document.getElementById('sidebar-position-toggle');
         const confirmToggle = document.getElementById('confirm-dialogs-toggle');
+        const addressToggle = document.getElementById('address-bar-toggle');
         
         if (themeToggle) {
             themeToggle.checked = preferences.theme === 'dark';
@@ -393,6 +406,10 @@ class UICore {
 
         if (confirmToggle) {
             confirmToggle.checked = preferences.confirmDialogs !== false;
+        }
+
+        if (addressToggle) {
+            addressToggle.checked = preferences.fullscreen === true;
         }
     }
     
@@ -888,6 +905,25 @@ class UICore {
         this.config.ui.confirmDialogs = enabled;
         this.config.save();
     }
+
+    /**
+     * Activer ou désactiver le plein écran pour masquer la barre d'adresse
+     * @param {boolean} enable - Activer
+     */
+    setFullscreen(enable) {
+        if (enable) {
+            const elem = document.documentElement;
+            if (!document.fullscreenElement && elem.requestFullscreen) {
+                elem.requestFullscreen().catch(() => {});
+            }
+        } else {
+            if (document.fullscreenElement && document.exitFullscreen) {
+                document.exitFullscreen().catch(() => {});
+            }
+        }
+        this.config.ui.fullscreen = enable;
+        this.config.save();
+    }
     
     /**
      * Basculer la sidebar
@@ -972,7 +1008,8 @@ class UICore {
                 showWelcomeMessage: document.getElementById('welcome-toggle')?.checked ?? true,
                 fontSize: document.body.getAttribute('data-font-size') || 'medium',
                 animations: document.body.getAttribute('data-animations') !== 'disabled',
-                confirmDialogs: document.getElementById('confirm-dialogs-toggle')?.checked ?? true
+                confirmDialogs: document.getElementById('confirm-dialogs-toggle')?.checked ?? true,
+                fullscreen: document.getElementById('address-bar-toggle')?.checked ?? false
             };
             
             userCore.updatePreferences(preferences);

@@ -37,7 +37,8 @@ class ProfileSystem {
                     showWelcomeMessage: true,
                     fontSize: 'medium',
                     animations: true,
-                    confirmDialogs: true
+                    confirmDialogs: true,
+                    fullscreen: false
                 },
                 defaultApps: ['notepad', 'todolist'],
                 restrictions: {
@@ -55,7 +56,8 @@ class ProfileSystem {
                     showWelcomeMessage: true,
                     fontSize: 'medium',
                     animations: true,
-                    confirmDialogs: true
+                    confirmDialogs: true,
+                    fullscreen: false
                 },
                 defaultApps: ['notepad', 'todolist', 'weather'],
                 restrictions: {
@@ -73,7 +75,8 @@ class ProfileSystem {
                     showWelcomeMessage: false,
                     fontSize: 'small',
                     animations: false,
-                    confirmDialogs: true
+                    confirmDialogs: true,
+                    fullscreen: false
                 },
                 defaultApps: ['notepad', 'htmlformatter', 'markdownreader'],
                 restrictions: {
@@ -91,7 +94,8 @@ class ProfileSystem {
                     showWelcomeMessage: true,
                     fontSize: 'large',
                     animations: true,
-                    confirmDialogs: true
+                    confirmDialogs: true,
+                    fullscreen: false
                 },
                 defaultApps: ['notepad', 'todolist'],
                 restrictions: {

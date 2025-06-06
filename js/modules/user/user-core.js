@@ -47,7 +47,8 @@ class UserCore {
                 showWelcomeMessage: true,
                 fontSize: 'medium',
                 animations: true,
-                confirmDialogs: true
+                confirmDialogs: true,
+                fullscreen: false
             },
             installedApps: ['notepad', 'todolist', 'weather'],
             appOrder: ['notepad', 'todolist', 'weather'],
@@ -97,9 +98,10 @@ class UserCore {
                     sidebarPosition: 'left',
                     showWelcomeMessage: true,
                     fontSize: 'medium',
-                    animations: true,
-                    confirmDialogs: true
-                },
+                animations: true,
+                confirmDialogs: true,
+                fullscreen: false
+            },
                 installedApps: [],
                 appOrder: [],
                 stats: {

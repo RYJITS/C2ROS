@@ -12,4 +12,4 @@ déplacement, l'application en cours de glisse est légèrement agrandie et son
 fond s'assombrit pour mieux la distinguer.
 Un bouton de déconnexion est disponible pour terminer la session.
 
-La section Préférences comporte plusieurs interrupteurs dont un pour activer ou non les pop-ups de confirmation.
+La section Préférences comporte plusieurs interrupteurs dont un pour activer ou non les pop-ups de confirmation, ainsi qu'un autre pour activer le mode plein écran et cacher la barre d'adresse du navigateur.
