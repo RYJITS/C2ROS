@@ -283,4 +283,4 @@ Documentation
 ## [1.0.6] - 2025-06-09 "Fix"
 
 ### 🐛 Correctifs
-- La poubelle du Store et la croix de fermeture du menu mobile n'apparaissent plus en bleu.
+- La poubelle du Store et la croix de fermeture du menu mobile s'affichent désormais avec une couleur neutre.
