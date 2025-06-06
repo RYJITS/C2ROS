@@ -1,9 +1,16 @@
 # 📝 C2R OS - Journal des modifications
 
+tzctt3-codex/2025-06-06
+## [1.1.6] - 2025-06-12 "InstallTile"
+
+### 📲 Installation PWA
+- Une nouvelle tuile sur la page d'accueil propose d'installer l'application en mode PWA lorsque vous êtes sur mobile.
+=======
 ## [1.1.6] - 2025-06-12 "UI Refinement"
 
 ### 🎨 Ajustements visuels
 - Icônes du menu d'applications mobile réduites et teintées en couleur secondaire pour un style plus sobre.
+main
 
 ## [1.1.5] - 2025-06-11 "PWA"
 
