@@ -1,10 +1,24 @@
 # 📝 C2R OS - Journal des modifications
 
+pdin0i-codex/2025-06-06
+## [1.1.6] - 2025-06-11 "PWAfix"
+
+### 🗑️ Nettoyage
+- Suppression des icônes binaires du manifeste mobile pour alléger le dépôt.
+- Le manifeste reste présent pour permettre un affichage plein écran sur mobile.
+
+## [1.1.5] - 2025-06-11 "PWA"
+
+### 📱 Support mobile
+- Ajout d'un fichier `manifest.json` et des meta tags pour installer l'OS sur mobile.
+- Une fois installé, la barre du navigateur se masque pour un affichage plein écran.
+=======
 ## [1.1.5] - 2025-06-11 "UI Icons"
 
 ### ✨ Harmonisation des icônes
 - Les applications utilisent désormais les pictogrammes Font Awesome au lieu des emojis.
 - Mise à jour du gestionnaire d'icônes avec de nouveaux glyphes (table, bars, code, chart).
+main
 
 ## [1.1.4] - 2025-06-10 "TrainingUI"
 

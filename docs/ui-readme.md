@@ -12,3 +12,4 @@ La page Profil permet de réordonner visuellement les applications installées g
 La sidebar propose un mode compact activé par un bouton dans son en-tête. L'icône passe d'une croix à un petit carré lorsque la barre est repliée, quelles que soient sa position et son thème. Les icônes de suppression restent rouges comme en mode standard.
 
 La barre latérale bénéficie d'un fond dégradé gris et d'une ombre pour s'intégrer harmonieusement aux thèmes sombre et clair. Le bouton hamburger a été supprimé au profit de cette barre de navigation basse.
+Depuis la version 1.1.6, un fichier `manifest.json` sans icônes binaires et des meta tags permettent d'installer C2R OS sur mobile en plein écran.
