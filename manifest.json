@@ -2,7 +2,7 @@
   "name": "C2R OS",
   "short_name": "C2R",
   "start_url": "./index.html",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
   "background_color": "#000000",
   "theme_color": "#000000",

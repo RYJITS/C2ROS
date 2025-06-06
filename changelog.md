@@ -1,11 +1,5 @@
 # 📝 C2R OS - Journal des modifications
 
-## [1.1.7] - 2025-06-12 "PWA fullscreen"
-
-### 📱 Amélioration mobile
-- Le manifeste définit désormais `display: fullscreen` pour une installation PWA
-  réellement en plein écran sur smartphone.
-
 ## [1.1.6] - 2025-06-11 "PWAfix"
 
 ### 🗑️ Nettoyage
