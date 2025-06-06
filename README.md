@@ -18,6 +18,7 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
 - Correction: en mode mobile, la poubelle conserve bien sa couleur rouge.
 - En affichage mobile, un bouton **Applications** apparaît dans la barre de navigation basse.
 - La croix du menu mobile adopte la même couleur neutre que les autres boutons.
+- Les icônes de la liste d'applications mobile sont plus petites et adoptent la couleur secondaire pour un rendu plus sobre.
 - Depuis la version 1.1.0, les applications installées peuvent être réordonnées par glisser-déposer dans la page Profil.
 - Un bouton de déconnexion est disponible dans la page Profil.
 - La barre latérale intègre un bouton de réduction : l'icône passe d'une croix à un petit carré suivant l'état de la barre.
@@ -25,6 +26,7 @@ Le Store propose un bouton unique pour installer ou désinstaller une applicatio
 - Nouvelle application **Formation ChatGPT** : apprenez à exploiter ChatGPT grâce à des exemples interactifs et un quiz.
 - Une page **Contact** fait son apparition pour joindre l'équipe de développement par mail ou téléphone.
 - Grâce à un manifeste web utilisant des icônes encodées en base64 et aux meta tags dédiés, le site peut être installé sur mobile en plein écran.
+- Une tuile dédiée propose l'installation en mode PWA lorsqu'on consulte la page d'accueil sur mobile.
 - La barre de navigation basse adopte désormais un style proche d'une application mobile : fond noir, icônes blanches et rouge actif. Le bouton central Profil est mis en avant par un cercle blanc.
 - L'application **Formation ChatGPT** propose désormais un cours en dix pages avec navigation pour une prise en main intuitive.
 - La page d'accueil présente des tuiles explicatives pour découvrir le fonctionnement du site.

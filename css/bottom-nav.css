@@ -117,3 +117,9 @@
 .mobile-app-item:last-child {
     border-bottom: none;
 }
+
+/* Icônes plus discrètes dans la liste mobile */
+.mobile-app-item .app-icon .icon {
+    font-size: 1.2rem;
+    color: var(--c2r-text-secondary);
+}
