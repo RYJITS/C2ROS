@@ -1,5 +1,10 @@
 # 📝 C2R OS - Journal des modifications
 
+## [1.1.6] - 2025-06-12 "UI Refinement"
+
+### 🎨 Ajustements visuels
+- Icônes du menu d'applications mobile réduites et teintées en couleur secondaire pour un style plus sobre.
+
 ## [1.1.5] - 2025-06-11 "PWA"
 
 ### 📱 Support mobile
