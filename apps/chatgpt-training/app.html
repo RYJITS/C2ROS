@@ -1,0 +1,41 @@
+<div class="training-app">
+    <h2><span data-icon="robot"></span> Formation ChatGPT</h2>
+    <p>Bienvenue dans cette formation interactive dédiée à l'utilisation de ChatGPT.</p>
+
+    <section class="course-section">
+        <h3>1. Comprendre ChatGPT</h3>
+        <p>ChatGPT est un assistant conversationnel capable de générer du texte en fonction de vos instructions. Plus votre demande est précise, plus la réponse sera pertinente.</p>
+    </section>
+
+    <section class="course-section">
+        <h3>2. Exemples d'utilisation</h3>
+        <ul>
+            <li>Rédaction : <code>Rédige un email professionnel pour remercier un client</code></li>
+            <li>Analyse : <code>Résume-moi les points clés de ce texte</code></li>
+            <li>Code : <code>Écris une fonction JavaScript qui trie un tableau</code></li>
+        </ul>
+    </section>
+
+    <section class="quiz-section">
+        <h3>3. Quiz de fin</h3>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Quelle est la meilleure façon de formuler un prompt&nbsp;?</p>
+                <label><input type="radio" name="q1" value="a"> Rester vague et bref</label>
+                <label><input type="radio" name="q1" value="b"> Donner le contexte et l'objectif</label>
+            </div>
+            <div class="question">
+                <p>2. Comment demander un exemple de code&nbsp;?</p>
+                <label><input type="radio" name="q2" value="a"> "Fais-le"</label>
+                <label><input type="radio" name="q2" value="b"> "Écris-moi une fonction qui..."</label>
+            </div>
+            <div class="question">
+                <p>3. Existe-t-il un raccourci pour régénérer une réponse&nbsp;?</p>
+                <label><input type="radio" name="q3" value="a"> Ctrl+R</label>
+                <label><input type="radio" name="q3" value="b"> Non, il faut utiliser le bouton dédié</label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Valider</button>
+        </form>
+        <div id="quiz-result" class="quiz-result"></div>
+    </section>
+</div>
