@@ -120,6 +120,11 @@
 
 /* Icônes plus discrètes dans la liste mobile */
 .mobile-app-item .app-icon .icon {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--c2r-text-secondary);
+}
+
+/* Taille réduite de la flèche dans la liste mobile */
+.mobile-app-item .material-symbols-outlined {
+    font-size: 1rem;
 }
